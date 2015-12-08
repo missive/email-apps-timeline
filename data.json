@@ -385,7 +385,7 @@
       },
       {
         "type": "discontinued",
-        "start": "2015-12-07",
+        "start": "2015-11-07",
         "end": "2015-12-07"
       }
     ]
@@ -403,13 +403,13 @@
         "type": "acquired",
         "buyer": "Google",
         "price": "25 millions",
-        "start": "2012-07-20",
+        "start": "2012-06-20",
         "end": "2012-07-20"
       },
       {
         "type": "discontinued",
         "start": "2012-07-20",
-        "end": "2012-07-20"
+        "end": "2012-08-20"
       }
     ]
   }
