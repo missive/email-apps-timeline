@@ -25,7 +25,6 @@ groups = data.map.with_index { |item, i|
   {
     id: i + 1,
     url: item['url'] || "https://en.wikipedia.org/wiki/#{URI::encode(item['wikipedia'])}",
-    content: item['title'],
     start: item['events'][0]['start'],
   }
 }
