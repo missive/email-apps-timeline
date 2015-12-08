@@ -26,26 +26,7 @@ a {
 .vis-labelset .vis-label,
 .vis-foreground .vis-group { border: none !important }
 
-.vis-panel {
-  &.vis-left {
-    background-color: rgba(#fff, .9);
-    box-shadow: 1px 0 1px rgba(black, 0.1);
-//    backdrop-filter: blur(10px) saturate(100%)
-  }
-
-  &.vis-center {
-    overflow: initial;
-    cursor: move
-  }
-}
-
-.vis-labelset .vis-label {
-  .vis-inner { padding: 0 }
-  .vis-inner a {
-    display: inline-block;
-    padding: 6px 1em;
-  }
-}
+.vis-panel.vis-center { cursor: move }
 
 .vis-item .vis-item-content {
   padding: 1px 4px;
@@ -78,4 +59,12 @@ a {
     background-color: $redColor;
     border-color: $redColor;
   }
+}
+
+.vis-item.vis-background {
+  background-color: transparent;
+  border-left: 1px solid rgba($blueColor, .75);
+
+  .vis-item-overflow { overflow: initial }
+  .vis-item-content { color: $blueColor }
 }
