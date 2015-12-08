@@ -33,6 +33,10 @@
 b
 </script>
 
+<script id="item-background" type="text/x-handlebars-template">
+  {{content}}
+</script>
+
 <script src="groups.js"></script>
 <script src="items.js"></script>
 
@@ -42,6 +46,7 @@ b
     bootstrapped: Handlebars.compile(document.getElementById('item-bootstrapped').innerHTML),
     acquired: Handlebars.compile(document.getElementById('item-acquired').innerHTML),
     discontinued: Handlebars.compile(document.getElementById('item-discontinued').innerHTML),
+    background: Handlebars.compile(document.getElementById('item-background').innerHTML),
   };
 
   var container = document.getElementById('visualization');
