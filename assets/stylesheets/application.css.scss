@@ -1,0 +1,81 @@
+//= require_tree ./base
+//= require_self
+
+// Imports -------------------------------------------------------------------
+@import 'base/variables';
+
+// Base ----------------------------------------------------------------------
+* { box-sizing: border-box }
+h1, h2, h3, h4, ul, p { margin: 0; padding: 0 }
+
+html, body { width: 100%; height: 100% }
+body {
+  font-family: $fontStack;
+  font-size: 14px;
+//  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $blueColor;
+  text-decoration: none;
+}
+
+// VIS Overwriting -----------------------------------------------------------
+.vis-timeline,
+.vis-panel,
+.vis-labelset .vis-label,
+.vis-foreground .vis-group { border: none !important }
+
+.vis-panel {
+  &.vis-left {
+    background-color: rgba(#fff, .9);
+    box-shadow: 1px 0 1px rgba(black, 0.1);
+//    backdrop-filter: blur(10px) saturate(100%)
+  }
+
+  &.vis-center {
+    overflow: initial;
+    cursor: move
+  }
+}
+
+.vis-labelset .vis-label {
+  .vis-inner { padding: 0 }
+  .vis-inner a {
+    display: inline-block;
+    padding: 6px 1em;
+  }
+}
+
+.vis-item .vis-item-content {
+  padding: 1px 4px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.vis-group {
+  .vis-item.vis-range {
+    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    & + .vis-item.vis-range { border-top-left-radius: 0; border-bottom-left-radius: 0 }
+    &:last-child { border-top-right-radius: 3px; border-bottom-right-radius: 3px }
+  }
+}
+
+.vis-item {
+  &.generic, &.bootstrapped {
+    background-color: $blueColor;
+    border-color: $blueColor;
+  }
+
+  &.acquired {
+    background-color: $tealColor;
+    border-color: $tealColor;
+  }
+
+  &.discontinued {
+    background-color: $redColor;
+    border-color: $redColor;
+  }
+}
