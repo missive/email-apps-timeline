@@ -1,0 +1,26 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    autoprefixer-rails (6.1.2)
+      execjs
+      json
+    concurrent-ruby (1.0.0)
+    execjs (2.6.0)
+    json (1.8.3)
+    rack (1.6.4)
+    sass (3.4.19)
+    sprockets (3.5.2)
+      concurrent-ruby (~> 1.0)
+      rack (> 1, < 3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  autoprefixer-rails
+  rack
+  sass
+  sprockets
+
+BUNDLED WITH
+   1.10.6
