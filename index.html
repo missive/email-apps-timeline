@@ -1,31 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Email clients history</title>
+  <title>The History of Email Apps</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.10.0/vis.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.10.0/vis.css" rel="stylesheet" type="text/css" />
-
-  <style type="text/css">
-    body, html {
-      font-family: sans-serif;
-    }
-
-    .generic, .bootstrapped {
-      background-color: green !important;
-      border-color: green !important;
-    }
-
-    .aquired {
-      background-color: blue !important;
-      border-color: blue !important;
-    }
-
-    .discontinued {
-      background-color: red !important;
-      border-color: red !important;
-    }
-  </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.10.0/vis.min.css" rel="stylesheet" type="text/css" />
+  <link href="styles/master.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -45,7 +25,7 @@
   {{title}}
 </script>
 
-<script id="item-aquired" type="text/x-handlebars-template">
+<script id="item-acquired" type="text/x-handlebars-template">
   {{buyer}} for {{price}}
 </script>
 
@@ -60,7 +40,7 @@ b
   var templates = {
     generic: Handlebars.compile(document.getElementById('item-generic').innerHTML),
     bootstrapped: Handlebars.compile(document.getElementById('item-bootstrapped').innerHTML),
-    aquired: Handlebars.compile(document.getElementById('item-aquired').innerHTML),
+    acquired: Handlebars.compile(document.getElementById('item-acquired').innerHTML),
     discontinued: Handlebars.compile(document.getElementById('item-discontinued').innerHTML),
   };
 

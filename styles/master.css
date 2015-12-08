@@ -1,0 +1,15 @@
+body, html {
+  font-family: sans-serif;
+}
+.generic, .bootstrapped {
+  background-color: green !important;
+  border-color: green !important;
+}
+.acquired {
+  background-color: blue !important;
+  border-color: blue !important;
+}
+.discontinued {
+  background-color: red !important;
+  border-color: red !important;
+}
