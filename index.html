@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Email clients history</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.10.0/vis.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.10.0/vis.css" rel="stylesheet" type="text/css" />
+
+  <style type="text/css">
+    body, html {
+      font-family: sans-serif;
+    }
+
+    .generic, .bootstrapped {
+      background-color: green !important;
+      border-color: green !important;
+    }
+
+    .aquired {
+      background-color: blue !important;
+      border-color: blue !important;
+    }
+
+    .discontinued {
+      background-color: red !important;
+      border-color: red !important;
+    }
+  </style>
+</head>
+
+<body>
+<div id="visualization"></div>
+
+<!-- Group templates -->
+<script id="group-template" type="text/x-handlebars-template">
+  <a href="{{url}}" title="{{content}}">{{content}}</a>
+</script>
+
+<!-- Item templates -->
+<script id="item-generic" type="text/x-handlebars-template">
+  {{title}}
+</script>
+
+<script id="item-bootstrapped" type="text/x-handlebars-template">
+  {{title}}
+</script>
+
+<script id="item-aquired" type="text/x-handlebars-template">
+  {{buyer}} for {{price}}
+</script>
+
+<script id="item-discontinued" type="text/x-handlebars-template">
+b
+</script>
+
+<script src="groups.js"></script>
+<script src="items.js"></script>
+
+<script type="text/javascript">
+  var templates = {
+    generic: Handlebars.compile(document.getElementById('item-generic').innerHTML),
+    bootstrapped: Handlebars.compile(document.getElementById('item-bootstrapped').innerHTML),
+    aquired: Handlebars.compile(document.getElementById('item-aquired').innerHTML),
+    discontinued: Handlebars.compile(document.getElementById('item-discontinued').innerHTML),
+  };
+
+  var container = document.getElementById('visualization');
+
+  var options = {
+    timeAxis: {scale: 'year', step: 5},
+    min: '1979',
+    max: '2018',
+    start: '2005',
+    end: '2016',
+    moveable: true,
+    showCurrentTime: false,
+    selectable: false,
+    zoomable: false,
+    stack: false,
+    groupTemplate: Handlebars.compile(document.getElementById('group-template').innerHTML),
+    template: function (item) {
+      var template = templates[item.eventType];
+      return template(item);
+    },
+    groupOrder: function(itemA, itemB){
+      if (itemA.start > itemB.start) return -1;
+      if (itemA.start < itemB.start) return 1;
+      return 0;
+    }
+  };
+
+  var timeline = new vis.Timeline(container, items, groups, options);
+</script>
+</body>
+</html>

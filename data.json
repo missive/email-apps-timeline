@@ -1,0 +1,416 @@
+[
+  {
+    "title": "Alpine",
+    "wikipedia": "Alpine (email client)",
+    "events": [{
+      "start": "2006-11-01",
+      "end": "2015-01-18"
+    }]
+  },
+  {
+    "title": "Atmail",
+    "wikipedia": "Atmail",
+    "events": [{
+      "start": "2001-01-30",
+      "end": "2014-07-14"
+    }]
+  },
+  {
+    "title": "Becky! Internet Mail",
+    "wikipedia": "Becky!",
+    "events": [{
+      "start": "1996-01-01",
+      "end": "2015-09-30"
+    }]
+  },
+  {
+    "title": "Citadel",
+    "wikipedia": "Citadel/UX",
+    "events": [{
+      "start": "1987-01-01",
+      "end": "2015-04-01"
+    }]
+  },
+  {
+    "title": "Claws Mail",
+    "wikipedia": "Claws Mail",
+    "events": [{
+      "start": "2001-05-01",
+      "end": "2015-07-19"
+    }]
+  },
+  {
+    "title": "Cone",
+    "wikipedia": "Cone (software)",
+    "events": [{
+      "start": "2003-05-01",
+      "end": "2015-04-25"
+    }]
+  },
+  {
+    "title": "Courier",
+    "wikipedia": "Courier (email client)",
+    "events": [{
+      "start": "2004-06-01",
+      "end": "2004-06-01"
+    }]
+  },
+  {
+    "title": "Elm",
+    "wikipedia": "Elm (email client)",
+    "events": [{
+      "start": "1986-01-01",
+      "end": "2005-08-18"
+    }]
+  },
+  {
+    "title": "eM Client",
+    "wikipedia": "eM Client",
+    "events": [{
+      "start": "2007-11-01",
+      "end": "2015-04-23"
+    }]
+  },
+  {
+    "title": "EmailTray",
+    "wikipedia": "EmailTray",
+    "events": [{
+      "start": "2010-10-01"
+    }]
+  },
+  {
+    "title": "Eudora",
+    "wikipedia": "Eudora (email client)",
+    "events": [{
+      "start": "1988-01-01",
+      "end": "2006-10-11"
+    }]
+  },
+  {
+    "title": "Eureka Email",
+    "wikipedia": "Eureka Email",
+    "events": [{
+      "start": "2002-11-01",
+      "end": "2005-03-01"
+    }]
+  },
+  {
+    "title": "Evolution",
+    "wikipedia": "Evolution (software)",
+    "events": [{
+      "start": "2000-05-11",
+      "end": "2015-09-23"
+    }]
+  },
+  {
+    "title": "Geary",
+    "wikipedia": "Geary (software)",
+    "events": [{
+      "start": "2012-05-04"
+    }]
+  },
+  {
+    "title": "Gnus",
+    "wikipedia": "Gnus",
+    "events": [{
+      "start": "1987-01-01",
+      "end": "2015-09-18"
+    }]
+  },
+  {
+    "title": "GroupWise",
+    "wikipedia": "GroupWise",
+    "events": [{
+      "start": "1988-01-01",
+      "end": "2014-04-02"
+    }]
+  },
+  {
+    "title": "InScribe",
+    "wikipedia": "Scribe Mail",
+    "events": [{
+      "start": "1999-01-01",
+      "end": "2014-02-04"
+    }]
+  },
+  {
+    "title": "IBM Lotus Notes",
+    "wikipedia": "IBM Lotus Notes",
+    "events": [{
+      "start": "1989-01-01",
+      "end": "2013-03-14"
+    }]
+  },
+  {
+    "title": "KMail",
+    "wikipedia": "KMail",
+    "events": [{
+      "start": "1998-10-01",
+      "end": "2014-11-11"
+    }]
+  },
+  {
+    "title": "Libremail",
+    "wikipedia": "Libremail",
+    "events": [{
+    "start": "2003-05-27"
+    }]
+  },
+  {
+    "title": "Mail (OS X)",
+    "wikipedia": "Mail (OS X)",
+    "events": [{
+    "start": "2000-09-13"
+    }]
+  },
+  {
+    "title": "Mailbird",
+    "wikipedia": "Mailbird",
+    "events": [{
+    "start": "2013-04-01"
+    }]
+  },
+  {
+    "title": "Microsoft Entourage",
+    "wikipedia": "Microsoft Entourage",
+    "events": [{
+      "start": "2001-10-01",
+      "end": "2013-03-12"
+    }]
+  },
+  {
+    "title": "Microsoft Office Outlook",
+    "wikipedia": "Microsoft Office Outlook",
+    "events": [{
+      "start": "1997-01-01"
+    }]
+  },
+  {
+    "title": "Mozilla Thunderbird",
+    "wikipedia": "Mozilla Thunderbird",
+    "events": [{
+      "start": "2003-07-28",
+      "end": "2015-09-29"
+    }]
+  },
+  {
+    "title": "Mulberry",
+    "wikipedia": "Mulberry (email client)",
+    "events": [{
+      "start": "1996-09-20",
+      "end": "2007-02-21"
+    }]
+  },
+  {
+    "title": "Mutt",
+    "wikipedia": "Mutt (email client)",
+    "events": [{
+      "start": "1995-01-01"
+    }]
+  },
+  {
+    "title": "Netscape Messenger",
+    "wikipedia": "Netscape Messenger",
+    "events": [{
+      "start": "1998-11-01",
+      "end": "2004-08-17"
+    }]
+  },
+  {
+    "title": "Netscape Messenger 9",
+    "wikipedia": "Netscape Messenger 9",
+    "events": [{
+      "start": "2007-11-15",
+      "end": "2008-03-01"
+    }]
+  },
+  {
+    "title": "MH Message Handling System",
+    "wikipedia": "MH Message Handling System",
+    "events": [{
+      "start": "1979-01-01",
+      "end": "2012-06-11"
+    }]
+  },
+  {
+    "title": "Opera Mail",
+    "wikipedia": "Opera Mail",
+    "events": [{
+      "start": "1996-09-01",
+      "end": "2013-06-11"
+    }]
+  },
+  {
+    "title": "Outlook Express",
+    "wikipedia": "Outlook Express",
+    "events": [{
+      "start": "1996-01-01",
+      "end": "2004-08-25"
+    }]
+  },
+  {
+    "title": "Pegasus Mail",
+    "wikipedia": "Pegasus Mail",
+    "events": [{
+      "start": "1990-01-01",
+      "end": "2014-03-08"
+    }]
+  },
+  {
+    "title": "Pine",
+    "wikipedia": "Pine (email client)",
+    "events": [{
+      "start": "1992-01-15",
+      "end": "2005-09-28"
+    }]
+  },
+  {
+    "title": "Pocomail",
+    "wikipedia": "Pocomail",
+    "events": [{
+      "start": "1999-01-01",
+      "end": "2009-04-06"
+    }]
+  },
+  {
+    "title": "RoundCube",
+    "wikipedia": "RoundCube",
+    "events": [{
+      "start": "2006-01-01",
+      "end": "2015-09-14"
+    }]
+  },
+  {
+    "title": "Mail & Newsgrou",
+    "wikipedia": "SeaMonkey Mail & Newsgroups",
+    "events": [{
+      "start": "2005-09-15",
+      "end": "2015-09-26"
+    }]
+  },
+  {
+    "title": "SquirrelMail",
+    "wikipedia": "SquirrelMail",
+    "events": [{
+      "start": "1999-12-01",
+      "end": "2011-07-12"
+    }]
+  },
+  {
+    "title": "Sylpheed",
+    "wikipedia": "Sylpheed",
+    "events": [{
+      "start": "2000-01-01",
+      "end": "2015-07-06"
+    }]
+  },
+  {
+    "title": "The Bat!",
+    "wikipedia": "The Bat!",
+    "events": [{
+      "start": "1997-03-01",
+      "end": "2015-08-05"
+    }]
+  },
+  {
+    "title": "Trojita",
+    "wikipedia": "Trojitá",
+    "events": [{
+      "start": "2009-08-01",
+      "end": "2015-02-23"
+    }]
+  },
+  {
+    "title": "Turnpike",
+    "wikipedia": "Turnpike (software)",
+    "events": [{
+      "start": "1996-01-01",
+      "end": "2006-05-26"
+    }]
+  },
+  {
+    "title": "Windows Live Mail",
+    "wikipedia": "Windows Live Mail",
+    "events": [{
+      "start": "2007-11-06",
+      "end": "2014-11-04"
+    }]
+  },
+  {
+    "title": "Windows Mail",
+    "wikipedia": "Windows Mail",
+    "events": [{
+      "start": "2005-10-05",
+      "end": "2007-01-01"
+    }]
+  },
+  {
+    "title": "YAM",
+    "wikipedia": "YAM (Yet Another Mailer)",
+    "events": [{
+      "start": "1995-01-01",
+      "end": "2014-04-18"
+    }]
+  },
+  {
+    "title": "Zimbra",
+    "wikipedia": "Zimbra",
+    "events": [{
+      "start": "2005-11-01",
+      "end": "2012-04-10"
+    }]
+  },
+  {
+    "title": "Missive",
+    "url": "https://missiveapp.com/",
+    "events": [{
+      "start": "2015-11-01"
+    }]
+  },
+  {
+    "title": "Mailbox",
+    "wikipedia": "Mailbox (application)",
+    "events": [
+      {
+        "type": "bootstrapped",
+        "start": "2013-02-07",
+        "end": "2013-03-14"
+      },
+      {
+        "type": "aquired",
+        "buyer": "Drobbox",
+        "price": "100 millions",
+        "start": "2013-03-15",
+        "end": "2015-12-06"
+      },
+      {
+        "type": "discontinued",
+        "start": "2015-12-07",
+        "end": "2015-12-07"
+      }
+    ]
+  },
+  {
+    "title": "Sparrow",
+    "wikipedia": "Sparrow (email client)",
+    "events": [
+      {
+        "type": "bootstrapped",
+        "start": "2011-02-09",
+        "end": "2012-07-20"
+      },
+      {
+        "type": "aquired",
+        "buyer": "Google",
+        "price": "25 millions",
+        "start": "2012-07-20",
+        "end": "2012-07-20"
+      },
+      {
+        "type": "discontinued",
+        "start": "2012-07-20",
+        "end": "2012-07-20"
+      }
+    ]
+  }
+]
