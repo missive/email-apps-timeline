@@ -97,7 +97,7 @@ items << {
 }
 
 items << {
-  content: 'INBOX Zero is introduced by Merlin Mann',
+  content: 'Inbox Zero is introduced by Merlin Mann',
   start: '2007',
   end: '2008',
   eventType: 'background',
