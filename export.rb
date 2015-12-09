@@ -1,23 +1,36 @@
 require 'open-uri'
 require 'yaml'
 require 'json'
+require 'active_support/all'
 
 data = YAML.load_file('data.yml')
 
 # items
 items = data.flat_map.with_index do |item, i|
-  item['events'].map.with_index do |event, ei|
-    {
-      id: "#{i + 1}-#{ei + 1}",
-      group: i + 1,
-      title: item['title'],
-      start: event['start'],
-      end: event['end'] || Time.now,
-      eventType: event['type'] || 'generic',
-      className: event['type'] || 'generic',
-      buyer: event['buyer'],
-      price: event['price'],
-    }
+  item['events'].flat_map.with_index do |event, ei|
+      events = [{
+        id: "#{i + 1}-#{ei + 1}",
+        group: i + 1,
+        title: event['title'] || item['title'],
+        start: event['start'],
+        end: event['end'] || Time.now,
+        eventType: event['type'] || 'generic',
+        className: event['type'] || 'generic',
+      }]
+
+    if event['end'] and !event['type'] and (ei + 1) == item['events'].length
+      events << {
+        id: "#{i + 1}-#{item['events'].length + 1}",
+        group: i + 1,
+        title: event['title'] || 'Discontinued',
+        start: event['end'],
+        end: event['end'].to_date + 1.month,
+        eventType: 'discontinued',
+        className: 'discontinued',
+      }
+    end
+
+    events
   end
 end
 
