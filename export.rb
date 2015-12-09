@@ -58,8 +58,7 @@ groups = data.map.with_index { |item, i|
   }
 }
 
-# # background items
-
+# background items
 items << {
   content: 'SMTP is introduced',
   start: '1980',

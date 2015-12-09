@@ -407,3 +407,109 @@
         title: "Google stops active development"
         start: "2012-07-20"
         end: "2012-08-20"
+  -
+    title: "Spark"
+    url: "https://readdle.com/products/spark"
+    events:
+      -
+        start: "2015-05-29"
+  -
+    title: "Frontapp"
+    url: "https://frontapp.com/"
+    events:
+      -
+        start: "2014-04-16"
+  -
+    title: "Airmail"
+    url: "http://airmailapp.com/"
+    events:
+      -
+        start: "2013-04-29"
+  -
+    title: "Yahoo! Mail"
+    wikipedia: "Yahoo! Mail"
+    events:
+      -
+        start: "1996-06-01"
+        end: "1997-10-08"
+      -
+        type: "acquired"
+        title: "Yahoo buys Four11 Corporation, parent company of RocketMail, ancestor of Yahoo! Mail"
+        start: "1997-10-08"
+  -
+    title: "Outlook.com (Hotmail)"
+    wikipedia: "Outlook.com"
+    events:
+      -
+        start: "1996-07-04"
+        end: "1997-12-31"
+      -
+        type: "acquired"
+        title: "Microsoft buys Hotmail for $400 millions"
+        start: "1997-12-31"
+  -
+    title: "N1"
+    url: "https://nylas.com/N1"
+    events:
+      -
+        start: "2015-10-05"
+  -
+    title: "@facebook.com"
+    url: "http://www.theverge.com/2014/2/24/5443454/facebook-retires-its-email-service"
+    events:
+      -
+        start: "2010-11-15"
+        end: "2014-02-24"
+  -
+    title: "Turing Email"
+    url: "https://www.turingemail.com/"
+    events:
+      -
+        start: "2010-10-01"
+  -
+    title: "Accompli (Outlook)"
+    url: "https://www.acompli.com/"
+    events:
+      -
+        start: "2014-02-20"
+        end: "2014-12-01"
+      -
+        type: "acquired"
+        title: "Microsoft buys Accompli for $200 millions"
+        start: "2014-12-01"
+  -
+    title: "Mail Pilot"
+    url: "http://mindsense.co/mailpilot/"
+    events:
+      -
+        start: "2014-01-16"
+  -
+    title: "Inbox by Google"
+    wikipedia: "Inbox by Gmail"
+    events:
+      -
+        start: "2014-10-22"
+  -
+    title: "SlideMail"
+    url: "http://www.slidemailapp.com/"
+    events:
+      -
+        start: "2015-03-28"
+  -
+    title: "Kiwi for Gmail"
+    url: "http://www.kiwiforgmail.com/"
+    events:
+      -
+        start: "2015-06-22"
+  -
+    title: "Mailburn"
+    url: "http://mailburn.com/"
+    events:
+      -
+        start: "2015-03-10"
+  -
+    title: "Mailtime"
+    url: "http://mailburn.com/"
+    events:
+      -
+        start: "2014-09-23"
