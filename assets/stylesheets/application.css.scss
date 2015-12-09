@@ -39,6 +39,7 @@ a {
   background: linear-gradient(to bottom, #fff 50%, rgba(#fff, .9));
   box-shadow: 0 1px 0 rgba($textColor, .1);
   z-index: 10;
+  cursor: move;
 
   .vis-text {
     color: rgba($textColor, .65);
@@ -53,17 +54,21 @@ a {
 
 // VIS Items -----------------------------------------------------------------
 .vis-item.vis-range {
-  .vis-item-overflow {
-    overflow: initial;
-  }
-
+  .vis-item-overflow, .vis-item-content, .vis-item-content a { height: 21px }
+  .vis-item-overflow { overflow: initial }
   .vis-item-content {
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+  } 
+  
+  .vis-item-content a {
+    display: block;
     padding: 4px 6px 3px;
     color: #fff;
     font-size: 11px;
     text-shadow: 0 1px 0px rgba($textColor, 0.25), 0 0 1px rgba($textColor, 0.65);
-    z-index: 1;
-  } 
+  }
 }
 
 .vis-group {
