@@ -61,6 +61,7 @@
     selectable: false,
     zoomable: false,
     stack: false,
+    throttleRedraw: 16.666666667,
     groupTemplate: Handlebars.compile(document.getElementById('group-template').innerHTML),
     template: function (item) {
       var template = templates[item.eventType];
