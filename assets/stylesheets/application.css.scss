@@ -50,10 +50,19 @@ a {
   }
 }
 
-.vis-item .vis-item-content {
-  padding: 4px 6px 3px;
-  color: #fff;
-  font-size: 11px;
+// VIS Items -----------------------------------------------------------------
+.vis-item.vis-range {
+  .vis-item-overflow {
+    overflow: initial;
+  }
+
+  .vis-item-content {
+    padding: 4px 6px 3px;
+    color: #fff;
+    font-size: 11px;
+    text-shadow: 0 1px 0px rgba($textColor, 0.25), 0 0 1px rgba($textColor, 0.65);
+    z-index: 10;
+  } 
 }
 
 .vis-group {
@@ -108,10 +117,10 @@ a {
   background-color: transparent;
   border: none;
   border-left: 1px solid rgba($blueColor, .75);
-  padding: 8px 7px;
+  padding: 5px;
 
   .vis-item-overflow { overflow: initial }
-  .vis-item-content { color: $blueColor; top: 0 !important; }
+  .vis-item-content { color: $blueColor; font-size: 11px; top: 0 !important; }
 }
 
 .vis-current-time {
