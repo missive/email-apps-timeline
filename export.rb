@@ -54,6 +54,22 @@ items << {
 }
 
 items << {
+  content: 'IMAP2 is introduced',
+  start: '1982',
+  end: '1983',
+  eventType: 'background',
+  type: 'background',
+}
+
+items << {
+  content: 'POP1 is introduced',
+  start: '1985',
+  end: '1986',
+  eventType: 'background',
+  type: 'background',
+}
+
+items << {
   content: 'POP3 and IMAP4 are introduced',
   start: '1996',
   end: '1998',
