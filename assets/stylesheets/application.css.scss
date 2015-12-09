@@ -38,6 +38,7 @@ a {
 .vis-top .vis-time-axis {
   background: linear-gradient(to bottom, #fff 50%, rgba(#fff, .9));
   box-shadow: 0 1px 0 rgba($textColor, .1);
+  z-index: 10;
 
   .vis-text {
     color: rgba($textColor, .65);
@@ -61,7 +62,7 @@ a {
     color: #fff;
     font-size: 11px;
     text-shadow: 0 1px 0px rgba($textColor, 0.25), 0 0 1px rgba($textColor, 0.65);
-    z-index: 10;
+    z-index: 1;
   } 
 }
 
