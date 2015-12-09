@@ -1,0 +1,108 @@
+// Imports -------------------------------------------------------------------
+@import 'variables';
+
+// Header --------------------------------------------------------------------
+.topbar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  padding: 40px 2%;
+  z-index: 1000;
+
+  .no-scroll &,
+  &.collapsed {
+    position: fixed;
+    top: 0;
+    padding: 8px 2%;
+    background-color: #fff;
+    box-shadow: 0 1px 0 rgba($textColor, .15);
+    .nav-logotype { transform: translatey(-1em); opacity: 0; }
+  }
+  a:focus { outline: none }
+  
+  h1 {
+    padding: .5em 0;
+    font-size: 21px;
+    font-weight: 300;
+  }
+}
+
+.safari-9:not(.ios) {
+  .topbar.collapsed {
+    background-color: rgba(#fff, .6);
+    backdrop-filter: blur(20px) saturate(100%);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .topbar.collapsed {
+    box-shadow: none;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 60px; left: 0;
+      width: 200%;
+      height: 1px;
+      background: linear-gradient( rgba($textColor, .15) 0%, rgba($textColor, .15) 50%,  transparent 50%, transparent 100%);
+    }
+  }
+}
+
+.topbar-container {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  height: 44px;
+  text-align: center;
+
+  & > * { display: inline-block }
+}
+
+.topbar-left { position: absolute; left: 0; top: 2px; }
+.topbar-right { position: absolute; right: 0; top: 5px; }
+
+.nav-link {
+  display: inline-block;
+  color: rgba($textColor, .65);
+  font-size: 15px;
+  padding: .6em 1.5em .4em;
+  &:first-child { padding-left: .5em }
+  &.current { color: rgba($textColor, .85) }
+  &:hover, &:focus { color: $textColor }
+}
+
+.nav-link-b { font-size: 13px }
+.nav-button {
+  border: 1px solid rgba($textColor, .125);
+  border-bottom-color: rgba($textColor, .15);
+  border-radius: 2em;
+  margin-top: 1px;
+  padding: .45em 1em .4em;
+  color: rgba($textColor, .65);
+  font-size: 13px;
+  transition-property: border-color, color;
+  transition: .15s;
+
+  &:hover { border-color: rgba($textColor, .33); color: rgba($textColor, .85) }
+  .nav-link + & { margin-left: .5em }
+}
+
+.collapsed .nav-button {
+  border-color: transparent;
+  background-color: $blueColor;
+  background-image: linear-gradient(to bottom, rgba(#fff,.085), transparent);
+  color: #fff;
+  transition: none;
+
+  &:hover, &:focus { color: #fff; background-color: darken(saturate($blueColor, 15%), 3%) }
+  &:active { background-image: linear-gradient(to top, rgba(#fff, .085), transparent) }
+}
+
+// Media Queries -------------------------------------------------------------
+@media (max-width: 720px) {
+  .nav-link { padding: .6em 1em }
+}
+
+@media (max-width: 600px) {
+  .topbar { padding: 8px 2%; position: fixed }
+}

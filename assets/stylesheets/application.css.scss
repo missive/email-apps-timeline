@@ -20,6 +20,11 @@ a {
   text-decoration: none;
 }
 
+.timeline {
+  background: linear-gradient(to bottom, #fafafa, #f1f1f1) no-repeat;
+  background-attachment: fixed;
+}
+
 // VIS Overwriting -----------------------------------------------------------
 .vis-timeline,
 .vis-panel,
@@ -63,8 +68,8 @@ a {
 
 .vis-item.vis-background {
   background-color: transparent;
-  border-left: 1px solid rgba($blueColor, .75);
+  border-left: 1px solid rgba($redColor, .5);
 
   .vis-item-overflow { overflow: initial }
-  .vis-item-content { color: $blueColor }
+  .vis-item-content { color: $redColor }
 }
