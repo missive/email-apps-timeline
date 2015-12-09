@@ -137,7 +137,7 @@
     events:
       -
         start: "1988-01-01"
-        end: "1994-03-22"
+        end: "1994-03-21"
       -
         start: "1994-03-22"
         type: "acquired"
@@ -513,3 +513,78 @@
     events:
       -
         start: "2014-09-23"
+  -
+    title: "Unibox"
+    url: "https://www.uniboxapp.com/"
+    events:
+      -
+        start: "2013-07-13"
+  -
+    title: "persona"
+    url: "http://www.personamail.com/"
+    events:
+      -
+        start: "2014-12-09"
+  -
+    title: "MailDeck"
+    url: "http://maildeckapp.com/"
+    events:
+      -
+        start: "2013-12-05"
+  -
+    title: "ClearSlide Mail (Seed Mail)"
+    url: "https://www.clearslide.com/csmail"
+    events:
+      -
+        start: "2013-01-12"
+        end: "2014-09-24"
+      -
+        type: "acquired"
+        title: "ClearSlide buys Seed Mail"
+        start: "2014-09-24"
+  -
+    title: "Inky"
+    url: "http://inkymail.squarespace.com/"
+    events:
+      -
+        start: "2012-05-01"
+  -
+    title: "MailBuzzr"
+    url: "http://mailbuzzr.com/"
+    events:
+      -
+        start: "2012-05-01"
+  -
+    title: "Amazon WorkMail"
+    url: "https://aws.amazon.com/workmail/"
+    events:
+      -
+        start: "2015-01-28"
+  -
+    title: "ProtonMail"
+    url: "https://protonmail.com/"
+    events:
+      -
+        start: "2014-05-20"
+  -
+    title: "myMail"
+    url: "http://mymail.my.com/"
+    events:
+      -
+        start: "2014-04-24"
+  -
+    title: "FastMail"
+    url: "https://www.fastmail.com/"
+    events:
+      -
+        start: "1999-01-01"
+        end: "2010-04-30"
+      -
+        type: "acquired"
+        title: "Opera Software buys FastMail"
+        start: "2010-04-30"
+        end: "2013-09-25"
+      -
+        type: "generic"
+        title: "FastMail staff purchase back the business from Opera"
+        start: "2013-09-25"
