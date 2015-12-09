@@ -9,6 +9,10 @@ def to_date(date)
   date.strftime('%Y-%m-%d')
 end
 
+def url(item)
+  item['url'] || "https://en.wikipedia.org/wiki/#{URI::encode(item['wikipedia'])}"
+end
+
 # items
 items = data.flat_map.with_index do |item, i|
   item['events'].flat_map.with_index do |event, ei|
@@ -20,6 +24,7 @@ items = data.flat_map.with_index do |item, i|
         end: event['end'] || to_date(Time.now),
         eventType: event['type'] || 'generic',
         className: event['type'] || 'generic',
+        url: url(item),
       }]
 
     if !event['end'] and (ei + 1) == item['events'].length
@@ -53,7 +58,7 @@ end
 groups = data.map.with_index { |item, i|
   {
     id: i + 1,
-    url: item['url'] || "https://en.wikipedia.org/wiki/#{URI::encode(item['wikipedia'])}",
+    url: url(item),
     start: item['events'][0]['start'],
   }
 }
