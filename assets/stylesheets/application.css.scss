@@ -27,17 +27,35 @@ a {
   background-attachment: fixed;
 }
 
+// UI ------------------------------------------------------------------------
+.white-box {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(#000,.1), 0 .5px 1px (rgba(#000, .1));
+
+  .white-box-section { padding: 1em }
+  .white-box-section + .white-box-section {
+    margin-top: .85em; 
+    padding-top: .85em;
+    border-top: 1px solid rgba($textColor, .1);
+  }
+}
+
 .timeline-legend {
   position: absolute;
   top: 120px; left: 30px;
-  padding: .85em 1em;
-  list-style: none;
+  max-width: 175px;
   z-index: 10;
   
-  li {
+  ul { list-style: none }
+  ul li {
     & > *  { display: inline-block; vertical-align: middle }
     & + li { margin-top: 1em }
-    .legend-label { margin: 1px 0 0 .75em }
+    .legend-label {
+      margin: 1px .5em 0 .75em;
+      color: rgba($textColor, .85);
+      line-height: 1;
+    }
     i {
       position: relative;
       width: 14px; height: 17px;
@@ -56,10 +74,13 @@ a {
   .timeline-now span { background-color: $redColor }
 }
 
-.white-box {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 0 1px rgba(#000,.1), 0 .5px 1px (rgba(#000, .1));
+small {
+  display: block;
+  color: rgba($textColor, .65);
+  font-size: 11px;
+  a { color: $textColor }
+  a:hover, a:focus { text-decoration: underline }
+  & + small { margin-top: .65em }
 }
 
 // VIS Overwriting -----------------------------------------------------------
@@ -95,8 +116,8 @@ a {
     width: 100%;
     padding: 0;
     z-index: 1;
-  } 
-  
+  }
+
   .vis-item-content a {
     display: block;
     padding: 4px 6px 3px;
@@ -137,16 +158,16 @@ a {
   }
 
   &.discontinued {
-    background-color: rgba($redColor, .85);
+    background-color: #f24e50;
     border: none;
   }
-  
+
   &.generic.fading {
     background: transparent linear-gradient(to right, #2263D4, rgba(#3686FF, 0));
     box-shadow: none;
     border-radius: 0 !important;
   }
-  
+
   &.acquired.fading {
     background: transparent linear-gradient(to right, #24C283, rgba(#24C283, 0));
     box-shadow: none;
