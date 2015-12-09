@@ -1,7 +1,8 @@
 require 'open-uri'
+require 'yaml'
 require 'json'
 
-data = JSON.parse File.read('data.json')
+data = YAML.load_file('data.yml')
 
 # items
 items = data.flat_map.with_index do |item, i|
