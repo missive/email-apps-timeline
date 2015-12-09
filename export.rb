@@ -5,6 +5,10 @@ require 'active_support/all'
 
 data = YAML.load_file('data.yml')
 
+def to_date(date)
+  date.strftime('%Y-%m-%d')
+end
+
 # items
 items = data.flat_map.with_index do |item, i|
   item['events'].flat_map.with_index do |event, ei|
@@ -13,7 +17,7 @@ items = data.flat_map.with_index do |item, i|
         group: i + 1,
         title: event['title'] || item['title'],
         start: event['start'],
-        end: event['end'] || Time.now,
+        end: event['end'] || to_date(Time.now),
         eventType: event['type'] || 'generic',
         className: event['type'] || 'generic',
       }]
@@ -22,8 +26,8 @@ items = data.flat_map.with_index do |item, i|
       events << {
         id: "#{i + 1}-#{item['events'].length + 1}",
         group: i + 1,
-        start: Time.now,
-        end: Time.now + 6.months,
+        start: to_date(Time.now),
+        end: to_date(Time.now + 6.months),
         eventType: event['type'] || 'generic',
         className: (event['type'] || 'generic') + ' fading',
       }
