@@ -21,8 +21,8 @@ a {
 }
 
 .timeline {
-  padding-top: 60px;
-  background: linear-gradient(to bottom, #fafafa, #f1f1f1) no-repeat;
+  padding-top: 38px;
+  background: linear-gradient(to bottom, #fcfcfc, #f1f1f1) no-repeat;
   background-attachment: fixed;
 }
 
@@ -32,13 +32,15 @@ a {
 .vis-labelset .vis-label,
 .vis-foreground .vis-group { border: none !important }
 .vis-panel.vis-center { cursor: move }
+.vis-panel.vis-left { width: 0 }
 
 .vis-top .vis-time-axis {
-//  background-color: #fff;
+  background-color: #fff;
   box-shadow: 0 1px 0 rgba($textColor, .1);
   
   .vis-text {
-    padding: 5px 1em;
+    color: rgba($textColor, .65);
+    padding: 5px 0;
   }
 }
 
