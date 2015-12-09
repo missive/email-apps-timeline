@@ -6,6 +6,7 @@
   position: absolute;
   top: 0; left: 0; right: 0;
   padding: 40px 2%;
+  line-height: 1.5;
   z-index: 1000;
 
   .no-scroll &,
@@ -14,13 +15,13 @@
     top: 0;
     padding: 8px 2%;
     background-color: #fff;
-    box-shadow: 0 1px 0 rgba($textColor, .15);
+    box-shadow: 0 1px 0 rgba($textColor, .2);
     .nav-logotype { transform: translatey(-1em); opacity: 0; }
   }
   a:focus { outline: none }
   
   h1 {
-    padding: .5em 0;
+    padding: .25em 0;
     font-size: 21px;
     font-weight: normal;
   }
@@ -50,7 +51,7 @@
 
 .topbar-container {
   position: relative;
-  max-width: 1440px;
+//  max-width: 1440px;
   margin: auto;
   height: 44px;
   text-align: center;
@@ -96,6 +97,27 @@
 
   &:hover, &:focus { color: #fff; background-color: darken(saturate($blueColor, 15%), 3%) }
   &:active { background-image: linear-gradient(to top, rgba(#fff, .085), transparent) }
+}
+
+.nav-share {
+  & > * { display: inline-block; vertical-align: middle }
+  span {
+    margin: .15em 1.5em 0 0;
+    color: rgba($textColor, .65);
+    font-size: 13px;
+    line-height: 1;
+  }
+
+  a {
+    display: inline-block;
+    padding: .65em;
+    opacity: .65;
+    transition: opacity .15s ease-out;
+
+    img { display: block; height: 17px; }
+    &:hover, &:focus { opacity: 1 }
+    & + a { margin-left: 1em;}
+  }
 }
 
 // Media Queries -------------------------------------------------------------

@@ -18,6 +18,7 @@ body {
 a {
   color: $blueColor;
   text-decoration: none;
+  transition: color .15s ease-out;
 }
 
 .timeline {
@@ -25,7 +26,7 @@ a {
   padding-top: 38px;
   background: linear-gradient(to bottom, #fcfcfc, #f1f1f1) no-repeat;
   background-attachment: fixed;
-}
+} 
 
 // UI ------------------------------------------------------------------------
 .white-box {
@@ -35,15 +36,15 @@ a {
 
   .white-box-section { padding: 1em }
   .white-box-section + .white-box-section {
-    margin-top: .85em; 
-    padding-top: .85em;
+    padding-top: 1em;
     border-top: 1px solid rgba($textColor, .1);
   }
+  .white-box-section:last-child { border-radius: 0 0 5px 5px }
 }
 
 .timeline-legend {
   position: absolute;
-  top: 120px; left: 30px;
+  top: 125px; left: 30px;
   max-width: 175px;
   z-index: 10;
   
@@ -74,12 +75,14 @@ a {
   .timeline-now span { background-color: $redColor }
 }
 
+//.legend-details { background-color: #fcfcfc }
 small {
   display: block;
   color: rgba($textColor, .65);
   font-size: 11px;
-  a { color: $textColor }
-  a:hover, a:focus { text-decoration: underline }
+  font-weight: 500;
+  a { color: rgba($textColor, .9) }
+  a:hover, a:focus { color: black; }
   & + small { margin-top: .65em }
 }
 
