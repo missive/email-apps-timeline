@@ -16,7 +16,15 @@
   </div>
 </header>
 
-<div id="visualization" class="timeline"></div>
+<div id="visualization" class="timeline">
+  <ul class="timeline-legend white-box">
+    <li><i class="vis-item generic"></i><span class="legend-label">Developped</span></li>
+    <li><i class="vis-item acquired"></i><span class="legend-label">Acquired</span></li>
+    <li><i class="vis-item discontinued"></i><span class="legend-label">Discontinued</span></li>
+    <li><i class="timeline-event"><span></span></i><span class="legend-label">Major Event</span></li>
+    <li><i class="timeline-now"><span></span></i><span class="legend-label">Today</span></li>
+  </ul>
+</div>
 
 <!-- Group templates -->
 <script id="group-template" type="text/x-handlebars-template">
@@ -24,23 +32,23 @@
 
 <!-- Item templates -->
 <script id="item-generic" type="text/x-handlebars-template">
-  <a href="{{url}}" title="{{title}}">{{title}}</a>
+  <a href="{{url}}" title="{{title}}" target="_blank">{{title}}</a>
 </script>
 
 <script id="item-acquired" type="text/x-handlebars-template">
-  <a href="{{url}}" title="{{title}}"></a>
+  <a href="{{url}}" title="{{title}}" target="_blank"></a>
 </script>
 
 <script id="item-discontinued" type="text/x-handlebars-template">
-  <a href="{{url}}" title="{{title}}"></a>
+  <a href="{{url}}" title="{{title}}" target="_blank"></a>
 </script>
 
 <script id="item-background" type="text/x-handlebars-template">
   {{content}}
 </script>
 
-<script src="groups.js"></script>
-<script src="items.js"></script>
+<script src="assets/javascripts/groups.js"></script>
+<script src="assets/javascripts/items.js"></script>
 
 <script type="text/javascript">
   var templates = {
@@ -60,7 +68,7 @@
     end: '2018',
     orientation: 'top',
     height: '100%',
-    margin: { axis: 50, item: 4 },
+    margin: { axis: 25, item: 4 },
     moveable: true,
     showCurrentTime: true,
     selectable: false,

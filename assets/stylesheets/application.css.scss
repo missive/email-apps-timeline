@@ -27,6 +27,41 @@ a {
   background-attachment: fixed;
 }
 
+.timeline-legend {
+  position: absolute;
+  top: 120px; left: 30px;
+  padding: .85em 1em;
+  list-style: none;
+  z-index: 10;
+  
+  li {
+    & > *  { display: inline-block; vertical-align: middle }
+    & + li { margin-top: 1em }
+    .legend-label { margin: 1px 0 0 .75em }
+    i {
+      position: relative;
+      width: 14px; height: 17px;
+      border-radius: 3px;
+    }
+  }
+
+  .timeline-event, .timeline-now {
+    text-align: center;
+    span {
+      display: inline-block;
+      width: 1px; height: 100%;
+      background-color: $blueColor;
+    }
+  }
+  .timeline-now span { background-color: $redColor }
+}
+
+.white-box {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(#000,.1), 0 .5px 1px (rgba(#000, .1));
+}
+
 // VIS Overwriting -----------------------------------------------------------
 .vis-timeline,
 .vis-panel,
@@ -103,7 +138,7 @@ a {
 
   &.discontinued {
     background-color: rgba($redColor, .85);
-    border: none
+    border: none;
   }
   
   &.generic.fading {
