@@ -18,6 +18,17 @@ items = data.flat_map.with_index do |item, i|
         className: event['type'] || 'generic',
       }]
 
+    if !event['end'] and (ei + 1) == item['events'].length
+      events << {
+        id: "#{i + 1}-#{item['events'].length + 1}",
+        group: i + 1,
+        start: Time.now,
+        end: Time.now + 6.months,
+        eventType: event['type'] || 'generic',
+        className: (event['type'] || 'generic') + ' fading',
+      }
+    end
+
     if event['end'] and !event['type'] and (ei + 1) == item['events'].length
       events << {
         id: "#{i + 1}-#{item['events'].length + 1}",
