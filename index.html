@@ -26,16 +26,10 @@
   {{title}}
 </script>
 
-<script id="item-bootstrapped" type="text/x-handlebars-template">
-  {{title}}
-</script>
-
 <script id="item-acquired" type="text/x-handlebars-template">
-  {{buyer}} for {{price}}
 </script>
 
 <script id="item-discontinued" type="text/x-handlebars-template">
-b
 </script>
 
 <script id="item-background" type="text/x-handlebars-template">
@@ -48,7 +42,6 @@ b
 <script type="text/javascript">
   var templates = {
     generic: Handlebars.compile(document.getElementById('item-generic').innerHTML),
-    bootstrapped: Handlebars.compile(document.getElementById('item-bootstrapped').innerHTML),
     acquired: Handlebars.compile(document.getElementById('item-acquired').innerHTML),
     discontinued: Handlebars.compile(document.getElementById('item-discontinued').innerHTML),
     background: Handlebars.compile(document.getElementById('item-background').innerHTML),
@@ -61,7 +54,7 @@ b
     min: '1979',
     max: '2018',
     start: '2000',
-    end: '2016',
+    end: '2018',
     orientation: 'both',
     moveable: true,
     showCurrentTime: true,
