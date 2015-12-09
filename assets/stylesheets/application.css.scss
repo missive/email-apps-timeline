@@ -90,9 +90,14 @@ a {
 .vis-item.vis-background {
   background-color: transparent;
   border: none;
-  border-left: 1px solid rgba($redColor, .5);
+  border-left: 1px solid rgba($blueColor, .75);
   padding: 8px 7px;
 
   .vis-item-overflow { overflow: initial }
-  .vis-item-content { color: $redColor; top: 0 !important; }
+  .vis-item-content { color: $blueColor; top: 0 !important; }
+}
+
+.vis-current-time {
+  background-color: $redColor;
+  width: 1px;
 }
