@@ -985,6 +985,18 @@
         type: "original"
         start: "2015-09-28"
   -
+    title: "Boxer"
+    platforms:
+      -
+        name: ios
+      -
+        name: android
+    url: "http://www.getboxer.com/"
+    events:
+      -
+        type: "original"
+        start: "2013-06-05"
+  -
     title: "FastMail"
     platforms:
       -
