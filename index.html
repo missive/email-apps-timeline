@@ -48,7 +48,7 @@
 
 <!-- Item templates -->
 <script id="item-generic" type="text/x-handlebars-template">
-  <a class="app-link" href="{{url}}" title="{{title}}" target="_blank">{{title}}</a>
+  <a class="app-link" href="{{url}}" title="{{title}}" target="_blank"><span>{{title}}</span></a>
 </script>
 
 <script id="item-acquired" type="text/x-handlebars-template">
@@ -109,17 +109,61 @@
 
   var timeline = new vis.Timeline(container, items, groups, options);
 
-  // Dragging
+  // Dragging and Scrolling
   var $foreground = $('.vis-foreground')
     , dragging = false
     , previousDragPosition = null
     , body = document.body
     , wasDragging = false
+    , scrollLeft = 0
+    , groups = []
 
-  // Scroll at top right on page load
   setTimeout(function() {
-    body.scrollLeft = body.scrollWidth
+    body.scrollLeft = 0
     body.scrollTop  = 0
+
+    $foreground.children('.vis-group').each(function(i, group) {
+      var span = group.querySelector('.app-link span')
+        , firstItem = group.querySelector('.vis-item:first-child')
+        , lastItem = group.querySelector('.vis-item:last-child')
+        , spanWidth = span.clientWidth
+        , minLeft = Math.round(firstItem.getBoundingClientRect().left)
+        , maxLeft = Math.round(lastItem.getBoundingClientRect().left + lastItem.clientWidth - spanWidth - 12)
+
+      groups.push({
+        span: span,
+        spanWidth: spanWidth,
+        minLeft: minLeft,
+        maxLeft: maxLeft,
+      })
+    })
+
+    $(window).on('scroll', function(e) {
+      if (scrollLeft == body.scrollLeft) { return }
+      scrollLeft = body.scrollLeft
+
+      for (var i = 0; i < groups.length; i++) {
+        var group = groups[i]
+        if (scrollLeft < group.minLeft) {
+          if (group.span.style.left != '0px') {
+            group.span.style.left = '0px'
+          }
+        } else if (scrollLeft > group.maxLeft) {
+          max = group.maxLeft - group.minLeft
+          if (group.span.style.left != max + 'px') {
+            group.span.style.left = max + 'px'
+          }
+        } else {
+          group.span.style.left = scrollLeft - group.minLeft + 'px'
+        }
+      }
+    })
+
+    // Scroll at top right on page load
+    setTimeout(function() {
+      body.scrollLeft = body.scrollWidth
+      body.scrollTop  = 0
+    }, 0)
   }, 0)
 
   $foreground.on('mousedown', function(e) {
