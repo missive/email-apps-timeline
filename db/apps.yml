@@ -1,6 +1,13 @@
 ---
   -
     title: "Alpine"
+    platforms:
+      -
+        name: unix
+      -
+        name: windows
+      -
+        name: web
     wikipedia: "Alpine (email client)"
     events:
       -
@@ -8,6 +15,9 @@
         start: "2006-11-01"
   -
     title: "Atmail"
+    platforms:
+      -
+        name: linux
     wikipedia: "Atmail"
     events:
       -
@@ -15,6 +25,9 @@
         start: "2001-01-30"
   -
     title: "Becky! Internet Mail"
+    platforms:
+      -
+        name: windows
     wikipedia: "Becky!"
     events:
       -
@@ -22,6 +35,11 @@
         start: "1996-01-01"
   -
     title: "Citadel"
+    platforms:
+      -
+        name: unix
+      -
+        name: linux
     wikipedia: "Citadel/UX"
     events:
       -
@@ -29,6 +47,15 @@
         start: "1987-01-01"
   -
     title: "Claws Mail"
+    platforms:
+      -
+        name: mac
+      -
+        name: windows
+      -
+        name: linux
+      -
+        name: unix
     wikipedia: "Claws Mail"
     events:
       -
@@ -36,6 +63,9 @@
         start: "2001-05-01"
   -
     title: "Cone"
+    platforms:
+      -
+        name: unix
     wikipedia: "Cone (software)"
     events:
       -
@@ -43,6 +73,9 @@
         start: "2003-05-01"
   -
     title: "Courier"
+    platforms:
+      -
+        name: windows
     wikipedia: "Courier (email client)"
     events:
       -
@@ -55,6 +88,9 @@
         end: "2008-05-01"
   -
     title: "Elm"
+    platforms:
+      -
+        name: unix
     wikipedia: "Elm (email client)"
     events:
       -
@@ -67,6 +103,9 @@
         end: "2005-09-18"
   -
     title: "eM Client"
+    platforms:
+      -
+        name: windows
     wikipedia: "eM Client"
     events:
       -
@@ -74,6 +113,9 @@
         start: "2007-11-01"
   -
     title: "EmailTray"
+    platforms:
+      -
+        name: windows
     wikipedia: "EmailTray"
     events:
       -
@@ -81,6 +123,13 @@
         start: "2010-10-01"
   -
     title: "Eudora"
+    platforms:
+      -
+        name: windows
+      -
+        name: mac
+      -
+        name: linux
     wikipedia: "Eudora (email client)"
     events:
       -
@@ -93,6 +142,9 @@
         end: "2006-11-11"
   -
     title: "Eureka Email"
+    platforms:
+      -
+        name: windows
     wikipedia: "Eureka Email"
     events:
       -
@@ -101,6 +153,9 @@
         end: "2005-03-01"
   -
     title: "Evolution"
+    platforms:
+      -
+        name: linux
     wikipedia: "Evolution (software)"
     events:
       -
@@ -128,6 +183,11 @@
         title: "Red Hat dedicates more developers to the project, reinvigorating its development"
   -
     title: "Geary"
+    platforms:
+      -
+        name: unix
+      -
+        name: linux
     wikipedia: "Geary (software)"
     events:
       -
@@ -140,6 +200,9 @@
         title: "Yorba Foundation stopped its activities and the future of this application was unclear, elementary OS still using this email client by default, has decided to fork the project on November 18, 2015, renaming the project to Pantheon Mail during the process [Wikipedia]"
   -
     title: "Gnus"
+    platforms:
+      -
+        name: linux
     wikipedia: "Gnus"
     events:
       -
@@ -148,6 +211,13 @@
         end: "2015-09-18"
   -
     title: "GroupWise"
+    platforms:
+      -
+        name: linux
+      -
+        name: mac
+      -
+        name: windows
     wikipedia: "GroupWise"
     events:
       -
@@ -160,6 +230,13 @@
         title: "Novell acquires WordPerfect, GroupWise's parent company"
   -
     title: "InScribe"
+    platforms:
+      -
+        name: windows
+      -
+        name: mac
+      -
+        name: linux
     wikipedia: "Scribe Mail"
     events:
       -
@@ -168,6 +245,13 @@
         end: "2014-02-04"
   -
     title: "IBM Lotus Notes"
+    platforms:
+      -
+        name: windows
+      -
+        name: linux
+      -
+        name: mac
     wikipedia: "IBM Lotus Notes"
     events:
       -
@@ -180,6 +264,11 @@
         title: "IBM acquires Lotus, Lotus Notes's parent company"
   -
     title: "KMail"
+    platforms:
+      -
+        name: windows
+      -
+        name: linux
     wikipedia: "KMail"
     events:
       -
@@ -187,6 +276,9 @@
         start: "1998-10-01"
   -
     title: "Libremail"
+    platforms:
+      -
+        name: linux
     wikipedia: "Libremail"
     events:
       -
@@ -194,6 +286,9 @@
         start: "2003-05-27"
   -
     title: "Mail (OS X)"
+    platforms:
+      -
+        name: mac
     wikipedia: "Mail (OS X)"
     events:
       -
@@ -201,6 +296,9 @@
         start: "2000-09-13"
   -
     title: "Mailbird"
+    platforms:
+      -
+        name: windows
     wikipedia: "Mailbird"
     events:
       -
@@ -208,6 +306,9 @@
         start: "2013-04-01"
   -
     title: "Microsoft Entourage"
+    platforms:
+      -
+        name: mac
     wikipedia: "Microsoft Entourage"
     events:
       -
@@ -216,6 +317,9 @@
         end: "2013-03-12"
   -
     title: "Microsoft Outlook"
+    platforms:
+      -
+        name: windows
     wikipedia: "Microsoft Office Outlook"
     events:
       -
@@ -223,6 +327,13 @@
         start: "1997-01-01"
   -
     title: "Mozilla Thunderbird"
+    platforms:
+      -
+        name: windows
+      -
+        name: mac
+      -
+        name: linux
     wikipedia: "Mozilla Thunderbird"
     events:
       -
@@ -230,6 +341,13 @@
         start: "2003-07-28"
   -
     title: "Mulberry"
+    platforms:
+      -
+        name: mac
+      -
+        name: windows
+      -
+        name: linux
     wikipedia: "Mulberry (email client)"
     events:
       -
@@ -238,6 +356,13 @@
         end: "2007-02-21"
   -
     title: "Mutt"
+    platforms:
+      -
+        name: windows
+      -
+        name: mac
+      -
+        name: linux
     wikipedia: "Mutt (email client)"
     events:
       -
@@ -245,6 +370,11 @@
         start: "1995-01-01"
   -
     title: "Netscape Messenger"
+    platforms:
+      -
+        name: windows
+      -
+        name: mac
     wikipedia: "Netscape Messenger"
     events:
       -
@@ -253,6 +383,13 @@
         end: "2004-08-17"
   -
     title: "Netscape Messenger 9"
+    platforms:
+      -
+        name: linux
+      -
+        name: mac
+      -
+        name: windows
     wikipedia: "Netscape Messenger 9"
     events:
       -
@@ -261,6 +398,11 @@
         end: "2008-03-01"
   -
     title: "MH Message Handling System"
+    platforms:
+      -
+        name: unix
+      -
+        name: linux
     wikipedia: "MH Message Handling System"
     events:
       -
@@ -268,6 +410,11 @@
         start: "1979-01-01"
   -
     title: "Opera Mail"
+    platforms:
+      -
+        name: windows
+      -
+        name: mac
     wikipedia: "Opera Mail"
     events:
       -
@@ -276,6 +423,9 @@
         end: "2013-06-11"
   -
     title: "Outlook Express"
+    platforms:
+      -
+        name: windows
     wikipedia: "Outlook Express"
     events:
       -
@@ -284,6 +434,11 @@
         end: "2004-08-25"
   -
     title: "Pegasus Mail"
+    platforms:
+      -
+        name: windows
+      -
+        name: mac
     wikipedia: "Pegasus Mail"
     events:
       -
@@ -292,6 +447,11 @@
         end: "2014-03-08"
   -
     title: "Pine"
+    platforms:
+      -
+        name: windows
+      -
+        name: linux
     wikipedia: "Pine (email client)"
     events:
       -
@@ -300,6 +460,9 @@
         end: "2005-09-28"
   -
     title: "Pocomail"
+    platforms:
+      -
+        name: windows
     wikipedia: "Pocomail"
     events:
       -
@@ -308,6 +471,9 @@
         end: "2009-04-06"
   -
     title: "RoundCube"
+    platforms:
+      -
+        name: web
     wikipedia: "RoundCube"
     events:
       -
@@ -315,6 +481,9 @@
         start: "2006-01-01"
   -
     title: "SquirrelMail"
+    platforms:
+      -
+        name: web
     wikipedia: "SquirrelMail"
     events:
       -
@@ -323,6 +492,13 @@
         end: "2011-07-12"
   -
     title: "Sylpheed"
+    platforms:
+      -
+        name: linux
+      -
+        name: windows
+      -
+        name: mac
     wikipedia: "Sylpheed"
     events:
       -
@@ -331,6 +507,9 @@
         end: "2015-07-06"
   -
     title: "The Bat!"
+    platforms:
+      -
+        name: windows
     wikipedia: "The Bat!"
     events:
       -
@@ -339,6 +518,11 @@
         end: "2015-08-05"
   -
     title: "Trojita"
+    platforms:
+      -
+        name: windows
+      -
+        name: linux
     wikipedia: "Trojitá"
     events:
       -
@@ -347,6 +531,9 @@
         end: "2015-02-23"
   -
     title: "Turnpike"
+    platforms:
+      -
+        name: windows
     wikipedia: "Turnpike (software)"
     events:
       -
@@ -355,6 +542,9 @@
         end: "2006-05-26"
   -
     title: "Windows Live Mail"
+    platforms:
+      -
+        name: windows
     wikipedia: "Windows Live Mail"
     events:
       -
@@ -363,6 +553,9 @@
         end: "2014-11-04"
   -
     title: "Windows Mail"
+    platforms:
+      -
+        name: windows
     wikipedia: "Windows Mail"
     events:
       -
@@ -371,6 +564,9 @@
         end: "2007-01-01"
   -
     title: "YAM"
+    platforms:
+      -
+        name: amigaos
     wikipedia: "YAM (Yet Another Mailer)"
     events:
       -
@@ -379,6 +575,9 @@
         end: "2014-04-18"
   -
     title: "Zimbra"
+    platforms:
+      -
+        name: web
     wikipedia: "Zimbra"
     events:
       -
@@ -406,6 +605,11 @@
         title: "Synacor acquires Zimbra from Telligent Systems"
   -
     title: "Missive"
+    platforms:
+      -
+        name: web
+      -
+        name: mac
     url: "https://missiveapp.com/"
     events:
       -
@@ -413,6 +617,11 @@
         start: "2015-11-01"
   -
     title: "Mailbox"
+    platforms:
+      -
+        name: ios
+      -
+        name: mac
     wikipedia: "Mailbox (application)"
     events:
       -
@@ -431,6 +640,9 @@
         end: "2016-02-26"
   -
     title: "Sparrow"
+    platforms:
+      -
+        name: mac
     wikipedia: "Sparrow (email client)"
     events:
       -
@@ -449,6 +661,9 @@
         end: "2012-08-20"
   -
     title: "Spark"
+    platforms:
+      -
+        name: ios
     url: "https://readdle.com/products/spark"
     events:
       -
@@ -456,6 +671,15 @@
         start: "2015-05-29"
   -
     title: "Front"
+    platforms:
+      -
+        name: ios
+      -
+        name: windows
+      -
+        name: mac
+      -
+        name: web
     url: "https://frontapp.com/"
     events:
       -
@@ -463,6 +687,11 @@
         start: "2014-04-16"
   -
     title: "Airmail"
+    platforms:
+      -
+        name: mac
+      -
+        name: ios
     url: "http://airmailapp.com/"
     events:
       -
@@ -470,6 +699,9 @@
         start: "2013-04-29"
   -
     title: "Yahoo! Mail"
+    platforms:
+      -
+        name: web
     wikipedia: "Yahoo! Mail"
     events:
       -
@@ -482,6 +714,9 @@
         start: "1997-10-08"
   -
     title: "Outlook.com (Hotmail)"
+    platforms:
+      -
+        name: web
     wikipedia: "Outlook.com"
     events:
       -
@@ -494,6 +729,13 @@
         start: "1997-12-31"
   -
     title: "N1"
+    platforms:
+      -
+        name: mac
+      -
+        name: linux
+      -
+        name: windows
     url: "https://nylas.com/N1"
     events:
       -
@@ -501,6 +743,9 @@
         start: "2015-10-05"
   -
     title: "@facebook.com"
+    platforms:
+      -
+        name: web
     url: "http://www.theverge.com/2014/2/24/5443454/facebook-retires-its-email-service"
     events:
       -
@@ -509,6 +754,9 @@
         end: "2014-02-24"
   -
     title: "Turing Email"
+    platforms:
+      -
+        name: web
     url: "https://www.turingemail.com/"
     events:
       -
@@ -516,6 +764,11 @@
         start: "2014-06-01"
   -
     title: "Accompli (Outlook)"
+    platforms:
+      -
+        name: ios
+      -
+        name: android
     url: "https://www.acompli.com/"
     events:
       -
@@ -528,6 +781,11 @@
         start: "2014-12-01"
   -
     title: "Mail Pilot"
+    platforms:
+      -
+        name: ios
+      -
+        name: mac
     url: "http://mindsense.co/mailpilot/"
     events:
       -
@@ -535,6 +793,11 @@
         start: "2014-01-16"
   -
     title: "Inbox by Gmail"
+    platforms:
+      -
+        name: ios
+      -
+        name: android
     wikipedia: "Inbox by Gmail"
     events:
       -
@@ -542,6 +805,9 @@
         start: "2014-10-22"
   -
     title: "SlideMail"
+    platforms:
+      -
+        name: ios
     url: "http://www.slidemailapp.com/"
     events:
       -
@@ -549,6 +815,9 @@
         start: "2015-03-28"
   -
     title: "Kiwi for Gmail"
+    platforms:
+      -
+        name: mac
     url: "http://www.kiwiforgmail.com/"
     events:
       -
@@ -556,6 +825,9 @@
         start: "2015-06-22"
   -
     title: "Mailburn"
+    platforms:
+      -
+        name: ios
     url: "http://mailburn.com/"
     events:
       -
@@ -563,6 +835,11 @@
         start: "2015-03-10"
   -
     title: "Mailtime"
+    platforms:
+      -
+        name: ios
+      -
+        name: android
     url: "https://mailtime.com/"
     events:
       -
@@ -570,6 +847,11 @@
         start: "2014-09-23"
   -
     title: "Unibox"
+    platforms:
+      -
+        name: ios
+      -
+        name: mac
     url: "https://www.uniboxapp.com/"
     events:
       -
@@ -577,6 +859,9 @@
         start: "2013-07-13"
   -
     title: "persona"
+    platforms:
+      -
+        name: ios
     url: "http://www.personamail.com/"
     events:
       -
@@ -584,6 +869,9 @@
         start: "2014-12-09"
   -
     title: "MailDeck"
+    platforms:
+      -
+        name: ios
     url: "http://maildeckapp.com/"
     events:
       -
@@ -591,6 +879,11 @@
         start: "2013-12-05"
   -
     title: "ClearSlide Mail (Seed Mail)"
+    platforms:
+      -
+        name: ios
+      -
+        name: android
     url: "https://www.clearslide.com/csmail"
     events:
       -
@@ -603,6 +896,15 @@
         start: "2014-09-24"
   -
     title: "Inky"
+    platforms:
+      -
+        name: windows
+      -
+        name: ios
+      -
+        name: mac
+      -
+        name: android
     url: "http://inkymail.squarespace.com/"
     events:
       -
@@ -610,6 +912,9 @@
         start: "2012-05-01"
   -
     title: "MailBuzzr"
+    platforms:
+      -
+        name: ios
     url: "http://mailbuzzr.com/"
     events:
       -
@@ -617,6 +922,9 @@
         start: "2012-05-01"
   -
     title: "Amazon WorkMail"
+    platforms:
+      -
+        name: web
     url: "https://aws.amazon.com/workmail/"
     events:
       -
@@ -624,6 +932,9 @@
         start: "2015-01-28"
   -
     title: "ProtonMail"
+    platforms:
+      -
+        name: web
     url: "https://protonmail.com/"
     events:
       -
@@ -631,6 +942,9 @@
         start: "2014-05-20"
   -
     title: "myMail"
+    platforms:
+      -
+        name: ios
     url: "http://mymail.my.com/"
     events:
       -
@@ -638,6 +952,9 @@
         start: "2014-04-24"
   -
     title: "FastMail"
+    platforms:
+      -
+        name: web
     url: "https://www.fastmail.com/"
     events:
       -

@@ -48,7 +48,9 @@
 
 <!-- Item templates -->
 <script id="item-original" type="text/x-handlebars-template">
-  <a class="app-link" href="{{url}}" title="{{title}}" target="_blank"><span>{{title}}</span></a>
+  <a class="app-link" href="{{url}}" title="{{title}}" target="_blank">
+    <span>{{#if displayTitle}}{{title}}{{/if}}</span>
+  </a>
 </script>
 
 <script id="item-acquired" type="text/x-handlebars-template">
@@ -87,7 +89,7 @@
     end: max.toString(),
     orientation: 'top',
     width: ((max - min) * 110) + 'px', // number of years x width in pixels
-    height: ((items.length * 12) - 40) + 'px', // number of items x height in pixels (w/ adjustement)
+    height: ((items.length * 13) - 32) + 'px', // number of items x height in pixels (w/ adjustement)
     margin: { axis: 25, item: 4 },
     moveable: false,
     showCurrentTime: true,

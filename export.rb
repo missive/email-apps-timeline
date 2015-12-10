@@ -27,6 +27,7 @@ items = apps.flat_map.with_index do |item, i|
         eventType: event['type'],
         className: event['type'],
         url: url(item),
+        displayTitle: ei == 0 ? true : false
       }]
 
     if !event['end'] and (ei + 1) == item['events'].length
@@ -62,6 +63,7 @@ groups = apps.map.with_index { |item, i|
     id: i + 1,
     url: url(item),
     start: item['events'][0]['start'],
+    className: item['platforms'].map{|p| p['name'] }.join(' ')
   }
 }
 
