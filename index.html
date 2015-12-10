@@ -142,9 +142,9 @@
       })
     })
 
-    $(window).on('scroll', function(e) {
-      if (scrollLeft == body.scrollLeft) { return }
-      scrollLeft = body.scrollLeft
+    $timeline.on('scroll', function(e) {
+      if (scrollLeft == $timeline[0].scrollLeft) { return }
+      scrollLeft = $timeline[0].scrollLeft
 
       for (var i = 0; i < groups.length; i++) {
         var group = groups[i]
