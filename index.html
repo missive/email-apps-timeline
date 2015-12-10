@@ -146,6 +146,9 @@
       if (scrollLeft == $timeline[0].scrollLeft) { return }
       scrollLeft = $timeline[0].scrollLeft
 
+      // Move fixed time axis horizontally
+      $timeAxis.css('left', -scrollLeft)
+
       for (var i = 0; i < groups.length; i++) {
         var group = groups[i]
         if (scrollLeft < group.minLeft) {
@@ -169,12 +172,6 @@
       $timeline[0].scrollTop  = 0
     }, 0)
   }, 0)
-
-  // Move fixed time axis horizontally
-  $timeline.on('scroll', function() {
-    console.log('scroll!', $timeline[0].scrollLeft);
-    $timeAxis.css('left', -$timeline[0].scrollLeft)
-  })
 
   $foreground.on('mousedown', function(e) {
     wasDragging = false
