@@ -950,6 +950,16 @@
       -
         type: "original"
         start: "2014-04-24"
+-
+    title: "Polymail"
+    platforms:
+      -
+        name: mac
+    url: "https://polymail.io/"
+    events:
+      -
+        type: "original"
+        start: "2015-09-28"
   -
     title: "FastMail"
     platforms:
