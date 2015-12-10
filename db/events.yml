@@ -12,10 +12,24 @@
     start: '1985'
     end: '1986'
   -
+    title: 'Netscape Navigator launches'
+    start: '1994-10-13'
+    end: '1995-10-13'
+  -
     title: 'POP3 and IMAP4 are introduced'
-    start: '1996'
-    end: '1998'
+    start: '1996-06'
+    end: '1997-06'
   -
     title: 'Inbox Zero is introduced by Merlin Mann'
     start: '2007'
     end: '2008'
+  -
+    title: 'App Store is introduced'
+    start: '2008-07-10'
+    end: '2009'
+    style: 'padding-top: 21px'
+  -
+    title: 'Android market is introduced'
+    start: '2008-10-27'
+    end: '2009'
+    style: 'padding-top: 42px'

@@ -75,6 +75,7 @@ YAML.load_file('db/events.yml').each do |event|
     content: event['title'],
     start: event['start'],
     end: event['end'],
+    style: event['style'],
     eventType: 'background',
     type: 'background',
   }
