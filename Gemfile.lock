@@ -10,6 +10,10 @@ GEM
     autoprefixer-rails (6.1.2)
       execjs
       json
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.9.1.1)
     concurrent-ruby (1.0.0)
     execjs (2.6.0)
     i18n (0.7.0)
@@ -30,6 +34,7 @@ PLATFORMS
 DEPENDENCIES
   activesupport
   autoprefixer-rails
+  coffee-script
   rack
   sass
   sprockets
