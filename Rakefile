@@ -5,6 +5,7 @@ task :precompile do
     assets/javascripts/base.js
     assets/stylesheets/application.css
   ].each do |path|
+    File.unlink(path)
     puts "Compiling #{path}..."
     File.write(path, ASSETS[path])
   end
