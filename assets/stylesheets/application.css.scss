@@ -130,13 +130,12 @@ small {
 }
 
 .vis-group {
-  .vis-item.vis-range {
+  .vis-item {
     border-radius: 0;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    min-height: 21px;
 
-    & + .vis-item.vis-range {
+    &.acquired, &.discontinued {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-left: 1px solid #fff;
