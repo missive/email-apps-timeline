@@ -116,6 +116,12 @@
     , body = document.body
     , wasDragging = false
 
+  // Scroll at top left on page load
+  setTimeout(function() {
+    body.scrollLeft = body.scrollWidth
+    body.scrollTop  = 0
+  }, 0)
+
   $foreground.on('mousedown', function(e) {
     wasDragging = false
     dragging = true
