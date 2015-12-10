@@ -26,7 +26,7 @@ a {
   padding-top: 38px;
   background: linear-gradient(to bottom, #fafafa, #f0f0f0) no-repeat;
   background-attachment: fixed;
-} 
+}
 
 // UI ------------------------------------------------------------------------
 .white-box {
@@ -47,7 +47,7 @@ a {
   top: 125px; left: 30px;
   max-width: 175px;
   z-index: 10;
-  
+
   ul { list-style: none }
   ul li {
     & > *  { display: inline-block; vertical-align: middle }

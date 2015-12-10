@@ -104,7 +104,6 @@ items << {
   type: 'background',
 }
 
-
 # Export
 File.write('assets/javascripts/items.js', "var items = #{JSON.dump(items)};")
 File.write('assets/javascripts/groups.js', "var groups = #{JSON.dump(groups)};")
