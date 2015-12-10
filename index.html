@@ -4,6 +4,7 @@
   <title>The History of Email Apps</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.10.0/vis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
   <script src="assets/javascripts/base.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.10.0/vis.min.css" rel="stylesheet" type="text/css" />
   <link href="assets/stylesheets/application.css" rel="stylesheet" type="text/css">
@@ -75,16 +76,20 @@
 
   var container = document.getElementById('visualization');
 
+  var min = 1979
+    , max = 2017
+
   var options = {
     timeAxis: {scale: 'year', step: 1},
-    min: '1979',
-    max: '2017',
-    start: '2005',
-    end: '2018',
+    min: min.toString(),
+    max: max.toString(),
+    start: min.toString(),
+    end: max.toString(),
     orientation: 'top',
-    height: '100%',
+    width: ((max - min) * 110) + 'px', // number of years x width in pixels
+    height: ((items.length * 12) - 40) + 'px', // number of items x height in pixels (w/ adjustement)
     margin: { axis: 25, item: 4 },
-    moveable: true,
+    moveable: false,
     showCurrentTime: true,
     selectable: false,
     zoomable: false,
@@ -103,6 +108,33 @@
   };
 
   var timeline = new vis.Timeline(container, items, groups, options);
+
+  // Dragging
+  var $foreground = $('.vis-foreground')
+    , dragging = false
+    , previousDragPosition = null
+    , body = document.body
+
+  $foreground.on('mousedown', function(e) {
+    dragging = true
+    previousDragPosition = [e.clientX, e.clientY]
+  })
+
+  $foreground.on('mousemove', function(e) {
+    if (dragging) {
+      var deltaX = e.clientX - previousDragPosition[0]
+        , deltaY = e.clientY - previousDragPosition[1]
+
+      body.scrollLeft -= deltaX
+      body.scrollTop  -= deltaY
+    }
+    previousDragPosition = [e.clientX, e.clientY]
+  })
+
+  $foreground.on('mouseup mouseleave', function() {
+    dragging = false
+    previousDragPosition = null
+  })
 </script>
 </body>
 </html>
