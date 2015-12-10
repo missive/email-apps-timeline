@@ -630,7 +630,7 @@
         end: "2013-03-14"
       -
         type: "acquired"
-        title: "Drobbox buys Mailbox for 100 millions"
+        title: "Drobbox buys Mailbox for $100 million"
         start: "2013-03-15"
         end: "2015-12-06"
       -
@@ -651,7 +651,7 @@
         end: "2012-07-20"
       -
         type: "acquired"
-        title: "Google buys Sparrow for 25 millions"
+        title: "Google buys Sparrow for $25 million"
         start: "2012-06-20"
         end: "2012-07-20"
       -
@@ -725,7 +725,7 @@
         end: "1997-12-31"
       -
         type: "acquired"
-        title: "Microsoft buys Hotmail for $400 millions"
+        title: "Microsoft buys Hotmail for $400 million"
         start: "1997-12-31"
   -
     title: "N1"
@@ -777,7 +777,7 @@
         end: "2014-12-01"
       -
         type: "acquired"
-        title: "Microsoft buys Accompli for $200 millions"
+        title: "Microsoft buys Accompli for $200 million"
         start: "2014-12-01"
   -
     title: "Mail Pilot"
