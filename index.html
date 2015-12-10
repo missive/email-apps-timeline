@@ -120,7 +120,7 @@
     , body = document.body
     , wasDragging = false
     , scrollLeft = 0
-    , groups = []
+    , labels = []
 
   setTimeout(function() {
     $timeline[0].scrollLeft = 0
@@ -134,7 +134,7 @@
         , minLeft = Math.round(firstItem.getBoundingClientRect().left)
         , maxLeft = Math.round(lastItem.getBoundingClientRect().left + lastItem.clientWidth - spanWidth - 12)
 
-      groups.push({
+      labels.push({
         span: span,
         spanWidth: spanWidth,
         minLeft: minLeft,
@@ -149,8 +149,8 @@
       // Move fixed time axis horizontally
       $timeAxis.css('left', -scrollLeft)
 
-      for (var i = 0; i < groups.length; i++) {
-        var group = groups[i]
+      for (var i = 0; i < labels.length; i++) {
+        var group = labels[i]
         if (scrollLeft < group.minLeft) {
           if (group.span.style.left != '0px') {
             group.span.style.left = '0px'

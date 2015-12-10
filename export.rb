@@ -34,10 +34,12 @@ items = apps.flat_map.with_index do |item, i|
       events << {
         id: "#{i + 1}-#{item['events'].length + 1}",
         group: i + 1,
+        title: event['title'] || item['title'],
         start: to_date(Time.now),
         end: to_date(Time.now + 12.months),
         eventType: event['type'],
         className: (event['type']) + ' fading',
+        url: url(item),
       }
     end
 
