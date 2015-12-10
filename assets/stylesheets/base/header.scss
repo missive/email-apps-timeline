@@ -15,7 +15,7 @@
     top: 0;
     padding: 8px 2%;
     background-color: #fff;
-    box-shadow: 0 1px 0 rgba($textColor, .2);
+    box-shadow: 0 1px 0 rgba($textColor, .175);
     .nav-logotype { transform: translatey(-1em); opacity: 0; }
   }
   a:focus { outline: none }
@@ -114,9 +114,9 @@
     opacity: .65;
     transition: opacity .15s ease-out;
 
-    img { display: block; height: 17px; }
+    img { display: block; height: 17px }
     &:hover, &:focus { opacity: 1 }
-    & + a { margin-left: 1em;}
+    & + a { margin-left: 1em }
   }
 }
 
