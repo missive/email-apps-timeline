@@ -29,7 +29,7 @@ a {
 .timeline {
   overflow: scroll;
   position: absolute;
-  top: $topbarHeight;
+  top: $topbarHeight - 22;
   right: 0;
   bottom: 0;
   left: 0;
@@ -110,7 +110,7 @@ small {
   z-index: 10;
   cursor: move;
   position: relative;
-  top: $topbarHeight;
+  top: $topbarHeight - 22;
 
   .vis-text {
     color: rgba($textColor, .65);
@@ -187,12 +187,14 @@ small {
     background: transparent linear-gradient(to right, #2263D4, rgba(#3686FF, 0));
     box-shadow: none;
     border-radius: 0 !important;
+    border-left: 0;
   }
 
   &.acquired.fading {
     background: transparent linear-gradient(to right, #24C283, rgba(#24C283, 0));
     box-shadow: none;
     border-radius: 0;
+    border-left: 0;
   }
 }
 
@@ -209,6 +211,7 @@ small {
 .vis-current-time {
   background-color: $redColor;
   width: 1px;
+  z-index: 100;
 }
 
 .app-link span {
