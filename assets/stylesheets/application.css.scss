@@ -9,6 +9,11 @@
 h1, h2, h3, h4, ul, p { margin: 0; padding: 0 }
 
 html, body { width: 100%; height: 100% }
+html, body {
+  background: linear-gradient(to bottom, #fafafa, #f0f0f0) no-repeat;
+  background-attachment: fixed;
+}
+
 body {
   font-family: $fontStack;
   font-size: 14px;
@@ -22,28 +27,17 @@ a {
 }
 
 .timeline {
-  height: 100%;
-  padding-top: 38px;
-  background: linear-gradient(to bottom, #fafafa, #f0f0f0) no-repeat;
-  background-attachment: fixed;
+  overflow: scroll;
+  position: absolute;
+  top: $topbarHeight;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 // UI ------------------------------------------------------------------------
-.white-box {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 0 1px rgba(#000,.1), 0 .5px 1px (rgba(#000, .1));
-
-  .white-box-section { padding: 1em }
-  .white-box-section + .white-box-section {
-    padding-top: 1em;
-    border-top: 1px solid rgba($textColor, .1);
-  }
-  .white-box-section:last-child { border-radius: 0 0 5px 5px }
-}
-
 .timeline-legend {
-  position: absolute;
+  position: fixed;
   top: 125px; left: 30px;
   max-width: 175px;
   z-index: 10;
@@ -85,6 +79,19 @@ small {
   & + small { margin-top: .65em }
 }
 
+.white-box {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(#000,.1), 0 .5px 1px (rgba(#000, .1));
+
+  .white-box-section { padding: 1em }
+  .white-box-section + .white-box-section {
+    padding-top: 1em;
+    border-top: 1px solid rgba($textColor, .1);
+  }
+  .white-box-section:last-child { border-radius: 0 0 5px 5px }
+}
+
 // VIS Overwriting -----------------------------------------------------------
 .vis-timeline,
 .vis-panel,
@@ -93,11 +100,17 @@ small {
 .vis-panel.vis-center { cursor: move; overflow: initial }
 .vis-panel.vis-left { width: 0 }
 
+.vis-top {
+  position: fixed;
+  z-index: 50;
+}
 .vis-top .vis-time-axis {
   background: linear-gradient(to bottom, #fff 50%, rgba(#fff, .9));
   box-shadow: 0 1px 0 rgba($textColor, .1);
   z-index: 10;
   cursor: move;
+  position: relative;
+  top: $topbarHeight;
 
   .vis-text {
     color: rgba($textColor, .65);
@@ -109,6 +122,8 @@ small {
     backdrop-filter: blur(20px) saturate(100%);
   }
 }
+
+.vis-shadow { display: none }
 
 // VIS Items -----------------------------------------------------------------
 .vis-item.vis-range {
@@ -184,9 +199,9 @@ small {
 .vis-item.vis-background {
   background-color: transparent;
   border: none;
-  border-left: 1px solid rgba($blueColor, .75);
   padding: 5px;
-
+  
+  &, & + .vis-item.vis-background { border-left: 1px solid rgba($blueColor, .75) }
   .vis-item-overflow { overflow: initial }
   .vis-item-content { color: $blueColor; font-size: 11px; top: 0 !important; }
 }

@@ -32,7 +32,7 @@
       <li><i class="vis-item original"></i><span class="legend-label">Original team</span></li>
       <li><i class="vis-item acquired"></i><span class="legend-label">Acquired</span></li>
       <li><i class="vis-item discontinued"></i><span class="legend-label">Discontinued</span></li>
-      <li><i class="timeline-event"><span></span></i><span class="legend-label">Major Event</span></li>
+      <li><i class="timeline-event"><span></span></i><span class="legend-label">Major event</span></li>
       <li><i class="timeline-now"><span></span></i><span class="legend-label">Today</span></li>
     </ul>
     <div class="legend-details white-box-section">
@@ -112,7 +112,9 @@
   var timeline = new vis.Timeline(container, items, groups, options);
 
   // Dragging and Scrolling
-  var $foreground = $('.vis-foreground')
+  var $foreground = $('.vis-itemset .vis-foreground')
+    , $timeAxis = $('.vis-time-axis')
+    , $timeline = $('.timeline')
     , dragging = false
     , previousDragPosition = null
     , body = document.body
@@ -121,8 +123,8 @@
     , groups = []
 
   setTimeout(function() {
-    body.scrollLeft = 0
-    body.scrollTop  = 0
+    $timeline[0].scrollLeft = 0
+    $timeline[0].scrollTop  = 0
 
     $foreground.children('.vis-group').each(function(i, group) {
       var span = group.querySelector('.app-link span')
@@ -163,10 +165,16 @@
 
     // Scroll at top right on page load
     setTimeout(function() {
-      body.scrollLeft = body.scrollWidth
-      body.scrollTop  = 0
+      $timeline[0].scrollLeft = $timeline[0].scrollWidth
+      $timeline[0].scrollTop  = 0
     }, 0)
   }, 0)
+
+  // Move fixed time axis horizontally
+  $timeline.on('scroll', function() {
+    console.log('scroll!', $timeline[0].scrollLeft);
+    $timeAxis.css('left', -$timeline[0].scrollLeft)
+  })
 
   $foreground.on('mousedown', function(e) {
     wasDragging = false
@@ -179,8 +187,8 @@
       var deltaX = e.clientX - previousDragPosition[0]
         , deltaY = e.clientY - previousDragPosition[1]
 
-      body.scrollLeft -= deltaX
-      body.scrollTop  -= deltaY
+      $timeline[0].scrollLeft -= deltaX
+      $timeline[0].scrollTop  -= deltaY
 
       wasDragging = true
     }
