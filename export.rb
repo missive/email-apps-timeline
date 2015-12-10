@@ -62,6 +62,7 @@ groups = apps.map.with_index { |item, i|
     id: i + 1,
     url: url(item),
     start: item['events'][0]['start'],
+    className: item['platforms'].map{|p| p['name'] }.join(' ')
   }
 }
 
