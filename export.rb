@@ -106,5 +106,5 @@ items << {
 
 
 # Export
-File.write('items.js', "var items = #{JSON.dump(items)};")
-File.write('groups.js', "var groups = #{JSON.dump(groups)};")
+File.write('assets/javascripts/items.js', "var items = #{JSON.dump(items)};")
+File.write('assets/javascripts/groups.js', "var groups = #{JSON.dump(groups)};")
