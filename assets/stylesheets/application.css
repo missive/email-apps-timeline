@@ -50,7 +50,7 @@
   .topbar a:focus {
     outline: none; }
   .topbar h1 {
-    padding: .25em 0;
+    padding: .35em 0;
     font-size: 21px;
     font-weight: normal; }
 
@@ -636,6 +636,9 @@ a {
       background-color: #2266ED; }
   .timeline-legend .timeline-now span {
     background-color: #F23131; }
+
+.legend-details {
+  background-color: #fafafa; }
 
 small {
   display: block;
