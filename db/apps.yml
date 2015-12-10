@@ -4,42 +4,49 @@
     wikipedia: "Alpine (email client)"
     events:
       -
+        type: "original"
         start: "2006-11-01"
   -
     title: "Atmail"
     wikipedia: "Atmail"
     events:
       -
+        type: "original"
         start: "2001-01-30"
   -
     title: "Becky! Internet Mail"
     wikipedia: "Becky!"
     events:
       -
+        type: "original"
         start: "1996-01-01"
   -
     title: "Citadel"
     wikipedia: "Citadel/UX"
     events:
       -
+        type: "original"
         start: "1987-01-01"
   -
     title: "Claws Mail"
     wikipedia: "Claws Mail"
     events:
       -
+        type: "original"
         start: "2001-05-01"
   -
     title: "Cone"
     wikipedia: "Cone (software)"
     events:
       -
+        type: "original"
         start: "2003-05-01"
   -
     title: "Courier"
     wikipedia: "Courier (email client)"
     events:
       -
+        type: "original"
         start: "2004-06-01"
         end: "2008-04-01"
       -
@@ -51,6 +58,7 @@
     wikipedia: "Elm (email client)"
     events:
       -
+        type: "original"
         start: "1986-01-01"
         end: "2005-08-18"
       -
@@ -62,18 +70,21 @@
     wikipedia: "eM Client"
     events:
       -
+        type: "original"
         start: "2007-11-01"
   -
     title: "EmailTray"
     wikipedia: "EmailTray"
     events:
       -
+        type: "original"
         start: "2010-10-01"
   -
     title: "Eudora"
     wikipedia: "Eudora (email client)"
     events:
       -
+        type: "original"
         start: "1988-01-01"
         end: "2006-10-11"
       -
@@ -85,6 +96,7 @@
     wikipedia: "Eureka Email"
     events:
       -
+        type: "original"
         start: "2002-11-01"
         end: "2005-03-01"
   -
@@ -92,6 +104,7 @@
     wikipedia: "Evolution (software)"
     events:
       -
+        type: "original"
         start: "2000-05-11"
         end: "2003-09-01"
       -
@@ -118,6 +131,7 @@
     wikipedia: "Geary (software)"
     events:
       -
+        type: "original"
         start: "2012-05-04"
         end: "2015-11-18"
       -
@@ -129,6 +143,7 @@
     wikipedia: "Gnus"
     events:
       -
+        type: "original"
         start: "1987-01-01"
         end: "2015-09-18"
   -
@@ -136,6 +151,7 @@
     wikipedia: "GroupWise"
     events:
       -
+        type: "original"
         start: "1988-01-01"
         end: "1994-03-21"
       -
@@ -147,6 +163,7 @@
     wikipedia: "Scribe Mail"
     events:
       -
+        type: "original"
         start: "1999-01-01"
         end: "2014-02-04"
   -
@@ -154,6 +171,7 @@
     wikipedia: "IBM Lotus Notes"
     events:
       -
+        type: "original"
         start: "1989-01-01"
         end: "1995-01-01"
       -
@@ -165,30 +183,35 @@
     wikipedia: "KMail"
     events:
       -
+        type: "original"
         start: "1998-10-01"
   -
     title: "Libremail"
     wikipedia: "Libremail"
     events:
       -
+        type: "original"
         start: "2003-05-27"
   -
     title: "Mail (OS X)"
     wikipedia: "Mail (OS X)"
     events:
       -
+        type: "original"
         start: "2000-09-13"
   -
     title: "Mailbird"
     wikipedia: "Mailbird"
     events:
       -
+        type: "original"
         start: "2013-04-01"
   -
     title: "Microsoft Entourage"
     wikipedia: "Microsoft Entourage"
     events:
       -
+        type: "original"
         start: "2001-10-01"
         end: "2013-03-12"
   -
@@ -196,18 +219,21 @@
     wikipedia: "Microsoft Office Outlook"
     events:
       -
+        type: "original"
         start: "1997-01-01"
   -
     title: "Mozilla Thunderbird"
     wikipedia: "Mozilla Thunderbird"
     events:
       -
+        type: "original"
         start: "2003-07-28"
   -
     title: "Mulberry"
     wikipedia: "Mulberry (email client)"
     events:
       -
+        type: "original"
         start: "1996-09-20"
         end: "2007-02-21"
   -
@@ -215,12 +241,14 @@
     wikipedia: "Mutt (email client)"
     events:
       -
+        type: "original"
         start: "1995-01-01"
   -
     title: "Netscape Messenger"
     wikipedia: "Netscape Messenger"
     events:
       -
+        type: "original"
         start: "1998-11-01"
         end: "2004-08-17"
   -
@@ -228,6 +256,7 @@
     wikipedia: "Netscape Messenger 9"
     events:
       -
+        type: "original"
         start: "2007-11-15"
         end: "2008-03-01"
   -
@@ -235,6 +264,7 @@
     wikipedia: "MH Message Handling System"
     events:
       -
+        type: "original"
         start: "1979-01-01"
   -
     title: "Opera Mail"
@@ -242,13 +272,14 @@
     events:
       -
         start: "1996-09-01"
-        type: 'generic'
+        type: 'original'
         end: "2013-06-11"
   -
     title: "Outlook Express"
     wikipedia: "Outlook Express"
     events:
       -
+        type: "original"
         start: "1996-01-01"
         end: "2004-08-25"
   -
@@ -256,7 +287,7 @@
     wikipedia: "Pegasus Mail"
     events:
       -
-        type: 'generic'
+        type: 'original'
         start: "1990-01-01"
         end: "2014-03-08"
   -
@@ -264,6 +295,7 @@
     wikipedia: "Pine (email client)"
     events:
       -
+        type: "original"
         start: "1992-01-15"
         end: "2005-09-28"
   -
@@ -271,6 +303,7 @@
     wikipedia: "Pocomail"
     events:
       -
+        type: "original"
         start: "1999-01-01"
         end: "2009-04-06"
   -
@@ -278,13 +311,14 @@
     wikipedia: "RoundCube"
     events:
       -
+        type: "original"
         start: "2006-01-01"
   -
     title: "SquirrelMail"
     wikipedia: "SquirrelMail"
     events:
       -
-        type: 'generic'
+        type: 'original'
         start: "1999-12-01"
         end: "2011-07-12"
   -
@@ -292,7 +326,7 @@
     wikipedia: "Sylpheed"
     events:
       -
-        type: 'generic'
+        type: 'original'
         start: "2000-01-01"
         end: "2015-07-06"
   -
@@ -300,7 +334,7 @@
     wikipedia: "The Bat!"
     events:
       -
-        type: 'generic'
+        type: 'original'
         start: "1997-03-01"
         end: "2015-08-05"
   -
@@ -308,7 +342,7 @@
     wikipedia: "Trojitá"
     events:
       -
-        type: 'generic'
+        type: 'original'
         start: "2009-08-01"
         end: "2015-02-23"
   -
@@ -316,6 +350,7 @@
     wikipedia: "Turnpike (software)"
     events:
       -
+        type: "original"
         start: "1996-01-01"
         end: "2006-05-26"
   -
@@ -323,7 +358,7 @@
     wikipedia: "Windows Live Mail"
     events:
       -
-        type: 'generic'
+        type: 'original'
         start: "2007-11-06"
         end: "2014-11-04"
   -
@@ -331,6 +366,7 @@
     wikipedia: "Windows Mail"
     events:
       -
+        type: "original"
         start: "2005-10-05"
         end: "2007-01-01"
   -
@@ -338,7 +374,7 @@
     wikipedia: "YAM (Yet Another Mailer)"
     events:
       -
-        type: 'generic'
+        type: 'original'
         start: "1995-01-01"
         end: "2014-04-18"
   -
@@ -346,6 +382,7 @@
     wikipedia: "Zimbra"
     events:
       -
+        type: "original"
         start: "2005-11-01"
         end: "2007-09-01"
       -
@@ -372,12 +409,14 @@
     url: "https://missiveapp.com/"
     events:
       -
+        type: "original"
         start: "2015-11-01"
   -
     title: "Mailbox"
     wikipedia: "Mailbox (application)"
     events:
       -
+        type: "original"
         start: "2013-02-07"
         end: "2013-03-14"
       -
@@ -395,6 +434,7 @@
     wikipedia: "Sparrow (email client)"
     events:
       -
+        type: "original"
         start: "2011-02-09"
         end: "2012-07-20"
       -
@@ -412,24 +452,28 @@
     url: "https://readdle.com/products/spark"
     events:
       -
+        type: "original"
         start: "2015-05-29"
   -
     title: "Front"
     url: "https://frontapp.com/"
     events:
       -
+        type: "original"
         start: "2014-04-16"
   -
     title: "Airmail"
     url: "http://airmailapp.com/"
     events:
       -
+        type: "original"
         start: "2013-04-29"
   -
     title: "Yahoo! Mail"
     wikipedia: "Yahoo! Mail"
     events:
       -
+        type: "original"
         start: "1996-06-01"
         end: "1997-10-08"
       -
@@ -441,6 +485,7 @@
     wikipedia: "Outlook.com"
     events:
       -
+        type: "original"
         start: "1996-07-04"
         end: "1997-12-31"
       -
@@ -452,12 +497,14 @@
     url: "https://nylas.com/N1"
     events:
       -
+        type: "original"
         start: "2015-10-05"
   -
     title: "@facebook.com"
     url: "http://www.theverge.com/2014/2/24/5443454/facebook-retires-its-email-service"
     events:
       -
+        type: "original"
         start: "2010-11-15"
         end: "2014-02-24"
   -
@@ -465,12 +512,14 @@
     url: "https://www.turingemail.com/"
     events:
       -
+        type: "original"
         start: "2014-06-01"
   -
     title: "Accompli (Outlook)"
     url: "https://www.acompli.com/"
     events:
       -
+        type: "original"
         start: "2014-02-20"
         end: "2014-12-01"
       -
@@ -482,60 +531,70 @@
     url: "http://mindsense.co/mailpilot/"
     events:
       -
+        type: "original"
         start: "2014-01-16"
   -
     title: "Inbox by Gmail"
     wikipedia: "Inbox by Gmail"
     events:
       -
+        type: "original"
         start: "2014-10-22"
   -
     title: "SlideMail"
     url: "http://www.slidemailapp.com/"
     events:
       -
+        type: "original"
         start: "2015-03-28"
   -
     title: "Kiwi for Gmail"
     url: "http://www.kiwiforgmail.com/"
     events:
       -
+        type: "original"
         start: "2015-06-22"
   -
     title: "Mailburn"
     url: "http://mailburn.com/"
     events:
       -
+        type: "original"
         start: "2015-03-10"
   -
     title: "Mailtime"
     url: "https://mailtime.com/"
     events:
       -
+        type: "original"
         start: "2014-09-23"
   -
     title: "Unibox"
     url: "https://www.uniboxapp.com/"
     events:
       -
+        type: "original"
         start: "2013-07-13"
   -
     title: "persona"
     url: "http://www.personamail.com/"
     events:
       -
+        type: "original"
         start: "2014-12-09"
   -
     title: "MailDeck"
     url: "http://maildeckapp.com/"
     events:
       -
+        type: "original"
         start: "2013-12-05"
   -
     title: "ClearSlide Mail (Seed Mail)"
     url: "https://www.clearslide.com/csmail"
     events:
       -
+        type: "original"
         start: "2013-01-12"
         end: "2014-09-24"
       -
@@ -547,36 +606,42 @@
     url: "http://inkymail.squarespace.com/"
     events:
       -
+        type: "original"
         start: "2012-05-01"
   -
     title: "MailBuzzr"
     url: "http://mailbuzzr.com/"
     events:
       -
+        type: "original"
         start: "2012-05-01"
   -
     title: "Amazon WorkMail"
     url: "https://aws.amazon.com/workmail/"
     events:
       -
+        type: "original"
         start: "2015-01-28"
   -
     title: "ProtonMail"
     url: "https://protonmail.com/"
     events:
       -
+        type: "original"
         start: "2014-05-20"
   -
     title: "myMail"
     url: "http://mymail.my.com/"
     events:
       -
+        type: "original"
         start: "2014-04-24"
   -
     title: "FastMail"
     url: "https://www.fastmail.com/"
     events:
       -
+        type: "original"
         start: "1999-01-01"
         end: "2010-04-30"
       -
@@ -585,6 +650,6 @@
         start: "2010-04-30"
         end: "2013-09-25"
       -
-        type: "generic"
+        type: "original"
         title: "FastMail staff purchase back the business from Opera"
         start: "2013-09-25"
