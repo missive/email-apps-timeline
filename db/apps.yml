@@ -950,7 +950,7 @@
       -
         type: "original"
         start: "2014-04-24"
--
+  -
     title: "Polymail"
     platforms:
       -
@@ -980,3 +980,18 @@
         type: "original"
         title: "FastMail staff purchase back the business from Opera"
         start: "2013-09-25"
+  -
+    title: "Lavabit"
+    platforms:
+      -
+        name: web
+    wikipedia: "Lavabit"
+    events:
+      -
+        type: "original"
+        start: "2004-01-01"
+        end: "2013-08-08"
+      -
+        type: "discontinued"
+        start: "2013-08-08"
+        end: "2013-09-08"
