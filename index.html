@@ -8,6 +8,20 @@
   <script src="assets/javascripts/base.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.10.0/vis.min.css" rel="stylesheet" type="text/css" />
   <link href="assets/stylesheets/application.css" rel="stylesheet" type="text/css">
+  <meta name="description" content="A timeline of all the different email apps/clients throughout time." />
+  <meta name="keywords" content="timeline, data vizualisation, visual history, email apps, email clients" />
+  <meta property="og:url" content="http://email-apps-timeline.missiveapp.com/" />
+  <meta property="og:site_name" content="Missive" />
+  <meta property="og:title" content="A History of Emails Apps" />
+  <meta property="og:image" content="TODO" />
+  <meta property="og:description" content="A timeline of all the different email apps/clients throughout time." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:site_name" content="A History of Emails Apps" />
+  <meta name="twitter:site" content="@missiveapp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:description" content="A timeline of all the different email apps/clients throughout time." />
+  <meta name="twitter:image" content="TODO" />
+  <meta name="image" content="TODO" />
 </head>
 
 <body>
@@ -18,9 +32,9 @@
     <div class="topbar-right">
       <div class="nav-share">
         <span>Share it on:</span>
-        <a href="https://missiveapp.com/blog" target="_blank"><img src="assets/images/twitter.svg" alt="Twitter"></a>
-        <a href="https://missiveapp.com/blog" target="_blank"><img src="assets/images/facebook.svg" alt="Facebook"></a>
-        <a href="https://missiveapp.com/blog" target="_blank"><img src="assets/images/google-plus.svg" alt="Google Plus"></a>
+        <a href="http://twitter.com/home?status=History of Emails Apps http://email-apps-timeline.missiveapp.com via @missiveapp" target="_blank"><img src="assets/images/twitter.svg" alt="Twitter"></a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://email-apps-timeline.missiveapp.com" target="_blank"><img src="assets/images/facebook.svg" alt="Facebook"></a>
+        <a href="https://plus.google.com/share?url=http://email-apps-timeline.missiveapp.com" target="_blank"><img src="assets/images/google-plus.svg" alt="Google Plus"></a>
       </div>
     </div>
   </div>
@@ -34,6 +48,8 @@
       <li><i class="vis-item discontinued"></i><span class="legend-label">Discontinued</span></li>
       <li><i class="timeline-event"><span></span></i><span class="legend-label">Major event</span></li>
       <li><i class="timeline-now"><span></span></i><span class="legend-label">Today</span></li>
+    </ul>
+    <ul class="platform-filters white-box-section">
     </ul>
     <div class="legend-details white-box-section">
       <small>Brought to you by the folks at <a href="https://missiveapp.com" target="_blank">Missive</a>.</small>
@@ -65,8 +81,31 @@
   {{content}}
 </script>
 
+<script id="platform-filters-template" type="text/x-handlebars-template">
+  {{#each platforms}}
+    <li>
+      <label>
+        <input type="checkbox" onclick="javascript:window.setPlatformFilter(this.value, this.checked)" value="{{index}}" checked>
+        <span class="legend-label">{{label}}</span>
+      </label>
+    </li>
+  {{/each}}
+</script>
+
 <script src="assets/javascripts/groups.js"></script>
 <script src="assets/javascripts/items.js"></script>
+
+<style>
+  .vis-foreground .vis-group { opacity: .1 }
+  .timeline[data-platforms~="android"] .vis-foreground .vis-group.android { opacity: 1 }
+  .timeline[data-platforms~="ios"]     .vis-foreground .vis-group.ios { opacity: 1 }
+  .timeline[data-platforms~="linux"]   .vis-foreground .vis-group.linux { opacity: 1 }
+  .timeline[data-platforms~="unix"]    .vis-foreground .vis-group.unix { opacity: 1 }
+  .timeline[data-platforms~="amigaos"] .vis-foreground .vis-group.amigaos { opacity: 1 }
+  .timeline[data-platforms~="mac"]     .vis-foreground .vis-group.mac { opacity: 1 }
+  .timeline[data-platforms~="web"]     .vis-foreground .vis-group.web { opacity: 1 }
+  .timeline[data-platforms~="windows"] .vis-foreground .vis-group.windows { opacity: 1 }
+</style>
 
 <script type="text/javascript">
   var templates = {
@@ -90,7 +129,7 @@
     orientation: 'top',
     width: ((max - min) * 110) + 'px', // number of years x width in pixels
     height: ((items.length * 13) - 14) + 'px', // number of items x height in pixels (w/ adjustement)
-    margin: { axis: 25, item: 4 },
+    margin: { axis: 21, item: 4 },
     moveable: false,
     showCurrentTime: true,
     selectable: false,
@@ -108,6 +147,47 @@
       return 0;
     }
   };
+
+  var platformChoices = [
+    { visible: true, index: 0, label: 'Web', platforms: ['web'] },
+    { visible: true, index: 1, label: 'iOS', platforms: ['ios'] },
+    { visible: true, index: 2, label: 'Android', platforms: ['android'] },
+    { visible: true, index: 3, label: 'Mac', platforms: ['mac'] },
+    { visible: true, index: 4, label: 'Windows', platforms: ['windows'] },
+    { visible: true, index: 5, label: 'Linux / Unix', platforms: ['linux', 'unix'] },
+    { visible: true, index: 6, label: 'Others', platforms: ['amigaos'] },
+  ]
+
+  var template = Handlebars.compile($('#platform-filters-template').html())
+  $('.platform-filters').html(template({ platforms: platformChoices }))
+
+  allPlatforms = []
+  platformChoices.forEach(function(choice) {
+    return choice.platforms.forEach(function(platform) {
+      if (allPlatforms.indexOf(platform) == -1) {
+        return allPlatforms.push(platform)
+      }
+    })
+  })
+
+  function setPlatformFilter(index, visible) {
+    var choice = platformChoices.filter(function(p) { return p.index == index })[0]
+    choice.visible = visible
+
+    var currentVisiblePlatforms = []
+    platformChoices.filter(function(p) { return p.visible }).forEach(function(choice) {
+      return choice.platforms.forEach(function(platform) {
+        return currentVisiblePlatforms.push(platform)
+      })
+    })
+
+    showVisiblePlatforms(currentVisiblePlatforms)
+  }
+
+  function showVisiblePlatforms(platforms) {
+    $('.timeline').attr('data-platforms', platforms.join(' '))
+  }
+  showVisiblePlatforms(allPlatforms)
 
   var timeline = new vis.Timeline(container, items, groups, options);
 
