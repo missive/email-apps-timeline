@@ -285,15 +285,25 @@
         type: "original"
         start: "2003-05-27"
   -
-    title: "Mail (OS X)"
+    title: "Apple Mail (OS X)"
     platforms:
       -
         name: mac
-    wikipedia: "Mail (OS X)"
+    wikipedia: "Mail (Apple)"
     events:
       -
         type: "original"
         start: "2000-09-13"
+  -
+    title: "Apple Mail (iOS)"
+    platforms:
+      -
+        name: ios
+    wikipedia: "Mail (Apple)"
+    events:
+      -
+        type: "original"
+        start: "2007-06-29"
   -
     title: "Mailbird"
     platforms:
