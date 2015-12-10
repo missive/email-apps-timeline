@@ -89,7 +89,7 @@
     end: max.toString(),
     orientation: 'top',
     width: ((max - min) * 110) + 'px', // number of years x width in pixels
-    height: ((items.length * 13) - 32) + 'px', // number of items x height in pixels (w/ adjustement)
+    height: ((items.length * 13) - 14) + 'px', // number of items x height in pixels (w/ adjustement)
     margin: { axis: 25, item: 4 },
     moveable: false,
     showCurrentTime: true,
@@ -142,9 +142,9 @@
       })
     })
 
-    $(window).on('scroll', function(e) {
-      if (scrollLeft == body.scrollLeft) { return }
-      scrollLeft = body.scrollLeft
+    $timeline.on('scroll', function(e) {
+      if (scrollLeft == $timeline[0].scrollLeft) { return }
+      scrollLeft = $timeline[0].scrollLeft
 
       for (var i = 0; i < groups.length; i++) {
         var group = groups[i]
