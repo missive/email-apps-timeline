@@ -792,6 +792,20 @@
         type: "original"
         start: "2014-01-16"
   -
+    title: "Gmail"
+    platforms:
+      -
+        name: ios
+      -
+        name: android
+      -
+        name: web
+    wikipedia: "Gmail"
+    events:
+      -
+        type: "original"
+        start: "2004-04-01"
+  -
     title: "Inbox by Gmail"
     platforms:
       -
