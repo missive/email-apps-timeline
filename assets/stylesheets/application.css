@@ -600,7 +600,7 @@ a {
 .timeline {
   overflow: scroll;
   position: absolute;
-  top: 60px;
+  top: 38px;
   right: 0;
   bottom: 0;
   left: 0; }
@@ -684,7 +684,7 @@ small {
   z-index: 10;
   cursor: move;
   position: relative;
-  top: 60px; }
+  top: 38px; }
   .vis-top .vis-time-axis .vis-text {
     color: rgba(52, 54, 58, 0.65);
     padding: 5px 0; }
@@ -739,12 +739,14 @@ small {
     background: transparent -webkit-linear-gradient(left, #2263D4, rgba(54, 134, 255, 0));
     background: transparent linear-gradient(to right, #2263D4, rgba(54, 134, 255, 0));
     box-shadow: none;
-    border-radius: 0 !important; }
+    border-radius: 0 !important;
+    border-left: 0; }
   .vis-item.acquired.fading {
     background: transparent -webkit-linear-gradient(left, #24C283, rgba(36, 194, 131, 0));
     background: transparent linear-gradient(to right, #24C283, rgba(36, 194, 131, 0));
     box-shadow: none;
-    border-radius: 0; }
+    border-radius: 0;
+    border-left: 0; }
 
 .vis-item.vis-background {
   background-color: transparent;
@@ -761,7 +763,8 @@ small {
 
 .vis-current-time {
   background-color: #F23131;
-  width: 1px; }
+  width: 1px;
+  z-index: 100; }
 
 .app-link span {
   display: inline-block;
