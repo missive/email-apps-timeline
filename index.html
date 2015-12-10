@@ -48,7 +48,9 @@
 
 <!-- Item templates -->
 <script id="item-original" type="text/x-handlebars-template">
-  <a class="app-link" href="{{url}}" title="{{title}}" target="_blank"><span>{{title}}</span></a>
+  <a class="app-link" href="{{url}}" title="{{title}}" target="_blank">
+    <span>{{#if displayTitle}}{{title}}{{/if}}</span>
+  </a>
 </script>
 
 <script id="item-acquired" type="text/x-handlebars-template">

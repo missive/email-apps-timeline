@@ -27,6 +27,7 @@ items = apps.flat_map.with_index do |item, i|
         eventType: event['type'],
         className: event['type'],
         url: url(item),
+        displayTitle: ei == 0 ? true : false
       }]
 
     if !event['end'] and (ei + 1) == item['events'].length
