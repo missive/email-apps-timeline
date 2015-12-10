@@ -13,7 +13,7 @@
   &.collapsed {
     position: fixed;
     top: 0;
-    padding: 8px 2%;
+    padding: $topbarVerticalPadding 2%;
     background-color: #fff;
     box-shadow: 0 1px 0 rgba($textColor, .175);
     .nav-logotype { transform: translatey(-1em); opacity: 0; }
@@ -53,7 +53,7 @@
   position: relative;
 //  max-width: 1440px;
   margin: auto;
-  height: 44px;
+  height: $topbarHeight - ($topbarVerticalPadding * 2);
   text-align: center;
 
   & > * { display: inline-block }

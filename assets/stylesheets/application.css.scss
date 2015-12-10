@@ -27,8 +27,12 @@ a {
 }
 
 .timeline {
-  height: 100%;
-  padding-top: 38px;
+  overflow: scroll;
+  position: absolute;
+  top: $topbarHeight;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 // UI ------------------------------------------------------------------------
@@ -96,11 +100,17 @@ small {
 .vis-panel.vis-center { cursor: move; overflow: initial }
 .vis-panel.vis-left { width: 0 }
 
+.vis-top {
+  position: fixed;
+  z-index: 50;
+}
 .vis-top .vis-time-axis {
   background: linear-gradient(to bottom, #fff 50%, rgba(#fff, .9));
   box-shadow: 0 1px 0 rgba($textColor, .1);
   z-index: 10;
   cursor: move;
+  position: relative;
+  top: $topbarHeight;
 
   .vis-text {
     color: rgba($textColor, .65);
