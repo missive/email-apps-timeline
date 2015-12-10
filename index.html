@@ -29,7 +29,7 @@
 <div id="visualization" class="timeline">
   <div class="timeline-legend white-box">
     <ul class="white-box-section">
-      <li><i class="vis-item generic"></i><span class="legend-label">Original team</span></li>
+      <li><i class="vis-item original"></i><span class="legend-label">Original team</span></li>
       <li><i class="vis-item acquired"></i><span class="legend-label">Acquired</span></li>
       <li><i class="vis-item discontinued"></i><span class="legend-label">Discontinued</span></li>
       <li><i class="timeline-event"><span></span></i><span class="legend-label">Major Event</span></li>
@@ -47,8 +47,8 @@
 </script>
 
 <!-- Item templates -->
-<script id="item-generic" type="text/x-handlebars-template">
-  <a class="app-link" href="{{url}}" title="{{title}}" target="_blank"><span>{{title}}</span></a>
+<script id="item-original" type="text/x-handlebars-template">
+  <a class="app-link" href="{{url}}" title="{{title}}" target="_blank">{{title}}</a>
 </script>
 
 <script id="item-acquired" type="text/x-handlebars-template">
@@ -68,7 +68,7 @@
 
 <script type="text/javascript">
   var templates = {
-    generic: Handlebars.compile(document.getElementById('item-generic').innerHTML),
+    original: Handlebars.compile(document.getElementById('item-original').innerHTML),
     acquired: Handlebars.compile(document.getElementById('item-acquired').innerHTML),
     discontinued: Handlebars.compile(document.getElementById('item-discontinued').innerHTML),
     background: Handlebars.compile(document.getElementById('item-background').innerHTML),

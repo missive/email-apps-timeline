@@ -3,8 +3,8 @@ require 'yaml'
 require 'json'
 require 'active_support/all'
 
-data = YAML.load_file('data.yml')
 
+# helpers
 def to_date(date)
   date.strftime('%Y-%m-%d')
 end
@@ -13,8 +13,10 @@ def url(item)
   item['url'] || "https://en.wikipedia.org/wiki/#{URI::encode(item['wikipedia'])}"
 end
 
+apps = YAML.load_file('db/apps.yml')
+
 # items
-items = data.flat_map.with_index do |item, i|
+items = apps.flat_map.with_index do |item, i|
   item['events'].flat_map.with_index do |event, ei|
       events = [{
         id: "#{i + 1}-#{ei + 1}",
@@ -22,8 +24,8 @@ items = data.flat_map.with_index do |item, i|
         title: event['title'] || item['title'],
         start: event['start'],
         end: event['end'] || to_date(Time.now),
-        eventType: event['type'] || 'generic',
-        className: event['type'] || 'generic',
+        eventType: event['type'],
+        className: event['type'],
         url: url(item),
       }]
 
@@ -33,8 +35,8 @@ items = data.flat_map.with_index do |item, i|
         group: i + 1,
         start: to_date(Time.now),
         end: to_date(Time.now + 12.months),
-        eventType: event['type'] || 'generic',
-        className: (event['type'] || 'generic') + ' fading',
+        eventType: event['type'],
+        className: (event['type']) + ' fading',
       }
     end
 
@@ -55,7 +57,7 @@ items = data.flat_map.with_index do |item, i|
 end
 
 # groups
-groups = data.map.with_index { |item, i|
+groups = apps.map.with_index { |item, i|
   {
     id: i + 1,
     url: url(item),
@@ -64,45 +66,15 @@ groups = data.map.with_index { |item, i|
 }
 
 # background items
-items << {
-  content: 'SMTP is introduced',
-  start: '1980',
-  end: '1981',
-  eventType: 'background',
-  type: 'background',
-}
-
-items << {
-  content: 'IMAP2 is introduced',
-  start: '1982',
-  end: '1983',
-  eventType: 'background',
-  type: 'background',
-}
-
-items << {
-  content: 'POP1 is introduced',
-  start: '1985',
-  end: '1986',
-  eventType: 'background',
-  type: 'background',
-}
-
-items << {
-  content: 'POP3 and IMAP4 are introduced',
-  start: '1996',
-  end: '1998',
-  eventType: 'background',
-  type: 'background',
-}
-
-items << {
-  content: 'Inbox Zero is introduced by Merlin Mann',
-  start: '2007',
-  end: '2008',
-  eventType: 'background',
-  type: 'background',
-}
+YAML.load_file('db/events.yml').each do |event|
+  items << {
+    content: event['title'],
+    start: event['start'],
+    end: event['end'],
+    eventType: 'background',
+    type: 'background',
+  }
+end
 
 # Export
 File.write('assets/javascripts/items.js', "var items = #{JSON.dump(items)};")

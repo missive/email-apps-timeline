@@ -1,10 +1,3 @@
-require 'sprockets'
-require 'autoprefixer-rails'
+require_relative 'lib/assets'
 
-assets = Sprockets::Environment.new do |env|
-  env.append_path('.')
-end
-
-AutoprefixerRails.install(assets)
-
-run assets
+run ASSETS
