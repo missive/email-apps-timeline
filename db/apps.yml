@@ -1036,3 +1036,13 @@
         type: "discontinued"
         start: "2013-08-08"
         end: "2013-09-08"
+  -
+    title: "K-9"
+    platforms:
+      -
+        name: android
+    wikipedia: "K-9 Mail"
+    events:
+      -
+        type: "original"
+        start: "2008-10-27"
