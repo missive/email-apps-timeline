@@ -1046,3 +1046,13 @@
       -
         type: "original"
         start: "2008-10-27"
+  -
+    title: "MailMate"
+    platforms:
+      -
+        name: mac
+    url: "http://freron.com/"
+    events:
+      -
+        type: "original"
+        start: "2010-10-01"
