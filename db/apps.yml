@@ -1055,3 +1055,13 @@
       -
         type: "original"
         start: "2010-10-01"
+  -
+    title: "Mailsmith"
+    platforms:
+      -
+        name: mac
+    url: "http://www.mailsmith.org/"
+    events:
+      -
+        type: "original"
+        start: "2002-01-01"
