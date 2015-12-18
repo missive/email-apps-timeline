@@ -1065,3 +1065,17 @@
       -
         type: "original"
         start: "1998-05-01"
+  -
+    title: "mu"
+    platforms:
+      - 
+        name: unix
+      - 
+        name: linux
+      - 
+        name: mac
+    url: "http://www.djcbsoftware.nl/code/mu/"
+    events:
+      -
+        type: "original"
+        start: "2009-11-25"
