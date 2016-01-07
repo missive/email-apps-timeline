@@ -1068,14 +1068,45 @@
   -
     title: "mu"
     platforms:
-      - 
+      -
         name: unix
-      - 
+      -
         name: linux
-      - 
+      -
         name: mac
     url: "http://www.djcbsoftware.nl/code/mu/"
     events:
       -
         type: "original"
         start: "2009-11-25"
+  -
+    title: "CloudMagic"
+    platforms:
+      -
+        name: mac
+      -
+        name: ios
+      -
+        name: android
+    url: "https://cloudmagic.com/"
+    events:
+      -
+        type: "original"
+        start: "2013-11-01"
+  -
+    title: "Simeon"
+    platforms:
+      -
+        name: mac
+      -
+        name: windows
+    wikipedia: "Simeon (email client)"
+    events:
+      -
+        type: "original"
+        start: "1996-05-01"
+        end: "2000-06-21"
+      -
+        type: "discontinued"
+        start: "2000-06-22"
+        end: "2000-07-22"
