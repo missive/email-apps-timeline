@@ -1068,14 +1068,28 @@
   -
     title: "mu"
     platforms:
-      - 
+      -
         name: unix
-      - 
+      -
         name: linux
-      - 
+      -
         name: mac
     url: "http://www.djcbsoftware.nl/code/mu/"
     events:
       -
         type: "original"
         start: "2009-11-25"
+  -
+    title: "CloudMagic"
+    platforms:
+      -
+        name: mac
+      -
+        name: ios
+      -
+        name: android
+    url: "https://cloudmagic.com/"
+    events:
+      -
+        type: "original"
+        start: "2013-11-01"
