@@ -1110,3 +1110,25 @@
         type: "discontinued"
         start: "2000-06-22"
         end: "2000-07-22"
+  -
+    title: "Postbox"
+    platforms:
+      -
+        name: mac
+      -
+        name: windows
+    wikipedia: "Postbox (email client)"
+    events:
+      -
+        type: "original"
+        start: "2008-09-09"
+-
+    title: "Dispatch"
+    platforms:
+      -
+        name: ios
+    url: "http://www.dispatchapp.net/"
+    events:
+      -
+        type: "original"
+        start: "2012-05-23"
