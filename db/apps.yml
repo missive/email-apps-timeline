@@ -1132,3 +1132,13 @@
       -
         type: "original"
         start: "2012-05-23"
+  -
+    title: "Canary Mail "
+    platforms:
+      -
+        name: mac
+    url: "http://canarymail.io"
+    events:
+      -
+        type: "original"
+        start: "2016-02-09"
