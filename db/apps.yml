@@ -1133,7 +1133,7 @@
         type: "original"
         start: "2012-05-23"
   -
-    title: "Canary Mail "
+    title: "Canary Mail"
     platforms:
       -
         name: mac
@@ -1142,3 +1142,13 @@
       -
         type: "original"
         start: "2016-02-09"
+  -
+    title: "Superhuman"
+    platforms:
+      -
+        name: mac
+    url: "https://superhuman.com"
+    events:
+      -
+        type: "original"
+        start: "2016-02-26"
