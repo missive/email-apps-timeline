@@ -1146,7 +1146,9 @@
     title: "Superhuman"
     platforms:
       -
-        name: mac
+        name: web
+      -
+        name: ios
     url: "https://superhuman.com"
     events:
       -
