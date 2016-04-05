@@ -1154,3 +1154,23 @@
       -
         type: "original"
         start: "2016-02-26"
+  -
+    title: "CocoaMail"
+    platforms:
+      -
+        name: ios
+    url: "http://www.putcocoa.in/"
+    events:
+      -
+        type: "original"
+        start: "2016-04-05"
+  -
+    title: "timyo"
+    platforms:
+      -
+        name: ios
+    url: "http://www.timyo.com/"
+    events:
+      -
+        type: "original"
+        start: "2016-02-27"
