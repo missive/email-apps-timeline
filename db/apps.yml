@@ -1196,3 +1196,13 @@
       -
         type: "original"
         start: "2016-04-09"
+  -
+    title: "DejaLu"
+    platforms:
+      -
+        name: mac
+    url: "http://dejalu.me"
+    events:
+      -
+        type: "original"
+        start: "2016-02-23"
