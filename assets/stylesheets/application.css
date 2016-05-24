@@ -48,10 +48,17 @@
       opacity: 0; }
   .topbar a:focus {
     outline: none; }
-  .topbar h1 {
-    padding: .35em 0;
+  .topbar .logo {
+    padding: .25em 0;
+    text-transform: uppercase;
+    font-family: "ars-maquette-web", "NeueHaasUnicaPro", "Avenir", "Helvetica Neue", Arial, sans-serif;
     font-size: 21px;
-    font-weight: normal; }
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    background: -webkit-linear-gradient(left, #3483FC, #24C283);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #3483FC; }
 
 .safari-9:not(.ios) .topbar.collapsed {
   background-color: rgba(255, 255, 255, 0.6);
@@ -78,10 +85,17 @@
   .topbar-container > * {
     display: inline-block; }
 
+.topbar-left:after, .topbar-right:after {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle; }
+
 .topbar-left {
   position: absolute;
   left: 0;
-  top: 2px; }
+  top: 0;
+  bottom: 0; }
 
 .topbar-right {
   position: absolute;
@@ -91,7 +105,10 @@
 .nav-link {
   display: inline-block;
   color: rgba(52, 54, 58, 0.65);
-  font-size: 15px;
+  font-family: "ars-maquette-web", "NeueHaasUnicaPro", "Avenir", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: .125em;
+  text-transform: uppercase;
   padding: .6em 1.5em .4em; }
   .nav-link:first-child {
     padding-left: 0.5em; }
@@ -140,10 +157,12 @@
   display: inline-block;
   vertical-align: middle; }
 .nav-share span {
-  margin: .15em 1.5em 0 0;
-  color: rgba(52, 54, 58, 0.65);
-  font-size: 13px;
-  line-height: 1; }
+  margin: .15em 1em 0 0;
+  color: rgba(52, 54, 58, 0.5);
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: .125em;
+  text-transform: uppercase; }
 .nav-share a {
   display: inline-block;
   padding: .65em;
