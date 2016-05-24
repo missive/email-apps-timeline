@@ -1216,3 +1216,13 @@
       -
         type: "original"
         start: "2016-05-23"
+  -
+    title: "Rainloop"
+    platforms:
+      -
+        name: web
+    url: "http://www.rainloop.net"
+    events:
+      -
+        type: "original"
+        start: "2012-06-01"
