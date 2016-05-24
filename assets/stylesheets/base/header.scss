@@ -20,10 +20,17 @@
   }
   a:focus { outline: none }
 
-  h1 {
-    padding: .35em 0;
+  .logo {
+    padding: .25em 0;
+    text-transform: uppercase;
+    font-family: $maquetteFontStack;
     font-size: 21px;
-    font-weight: normal;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    background: -webkit-linear-gradient(left, #3483FC, #24C283);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #3483FC;
   }
 }
 
@@ -59,13 +66,22 @@
   & > * { display: inline-block }
 }
 
-.topbar-left { position: absolute; left: 0; top: 2px; }
+.topbar-left:after, .topbar-right:after {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.topbar-left { position: absolute; left: 0; top: 0; bottom: 0 }
 .topbar-right { position: absolute; right: 0; top: 5px; }
 
 .nav-link {
   display: inline-block;
   color: rgba($textColor, .65);
-  font-size: 15px;
+  font-family: $maquetteFontStack;
+  font-size: 12px;
+  letter-spacing: .125em;
+  text-transform: uppercase;
   padding: .6em 1.5em .4em;
   &:first-child { padding-left: .5em }
   &.current { color: rgba($textColor, .85) }
@@ -102,10 +118,12 @@
 .nav-share {
   & > * { display: inline-block; vertical-align: middle }
   span {
-    margin: .15em 1.5em 0 0;
-    color: rgba($textColor, .65);
-    font-size: 13px;
+    margin: .15em 1em 0 0;
+    color: rgba($textColor, .5);
+    font-size: 12px;
     line-height: 1;
+    letter-spacing: .125em;
+    text-transform: uppercase;
   }
 
   a {

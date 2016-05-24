@@ -6,6 +6,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.10.0/vis.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
   <script src="assets/javascripts/base.js"></script>
+  <!-- Typekit -->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'jxe5unj',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.10.0/vis.min.css" rel="stylesheet" type="text/css" />
   <link href="assets/stylesheets/application.css" rel="stylesheet" type="text/css">
   <meta name="description" content="A timeline of all the different email apps/clients throughout time." />
@@ -27,11 +38,11 @@
 <body>
 <header class="topbar collapsed">
   <div class="topbar-container">
-    <div class="topbar-left"><a class="nav-link" href="https://missiveapp.com/blog/history-of-email-apps" target="_blank">View blog post</a></div>
-    <h1>A Brief History of Email Apps</h1>
+    <div class="topbar-left"><a class="nav-link" href="https://missiveapp.com/blog/history-of-email-apps" target="_blank">About</a></div>
+    <h1 class="logo">A Brief History of Email Apps</h1>
     <div class="topbar-right">
       <div class="nav-share">
-        <span>Share it on:</span>
+        <span>Share it:</span>
         <a href="http://twitter.com/home?status=A%20Brief%20History%20of%20Emails%20Apps%20http%3A%2F%2Femail-apps-timeline.missiveapp.com%20via%20%40missiveapp" target="_blank"><img src="assets/images/twitter.svg" alt="Twitter"></a>
         <a href="https://www.facebook.com/sharer/sharer.php?u=http://email-apps-timeline.missiveapp.com" target="_blank"><img src="assets/images/facebook.svg" alt="Facebook"></a>
         <a href="https://plus.google.com/share?url=http://email-apps-timeline.missiveapp.com" target="_blank"><img src="assets/images/google-plus.svg" alt="Google Plus"></a>
