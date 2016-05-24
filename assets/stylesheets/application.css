@@ -44,7 +44,6 @@
     box-shadow: 0 1px 0 rgba(52, 54, 58, 0.175); }
     .no-scroll .topbar .nav-logotype, .topbar.collapsed .nav-logotype {
       -webkit-transform: translatey(-1em);
-          -ms-transform: translatey(-1em);
               transform: translatey(-1em);
       opacity: 0; }
   .topbar a:focus {

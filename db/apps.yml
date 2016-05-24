@@ -1206,3 +1206,13 @@
       -
         type: "original"
         start: "2016-02-23"
+  -
+    title: "Morning Mail"
+    platforms:
+      -
+        name: ios
+    url: "http://mrng.me/"
+    events:
+      -
+        type: "original"
+        start: "2016-05-23"
