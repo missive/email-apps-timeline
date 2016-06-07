@@ -1226,3 +1226,15 @@
       -
         type: "original"
         start: "2012-06-01"
+  -
+    title: "Hiri"
+    platforms:
+      -
+        name: mac
+      -
+        name: windows
+    url: "https://www.hiri.com"
+    events:
+      -
+        type: "original"
+        start: "2014-11-01"
