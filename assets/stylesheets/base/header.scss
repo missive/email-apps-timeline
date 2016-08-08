@@ -5,8 +5,6 @@
 .topbar {
   position: absolute;
   top: 0; left: 0; right: 0;
-  padding: 40px 2%;
-  line-height: 1.5;
   z-index: 1000;
 
   .no-scroll &,
@@ -31,6 +29,12 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #3483FC;
+  }
+
+  .subtitle {
+    color: rgba($textColor, .5);
+    font-size: 16px;
+    font-weight: 200;
   }
 }
 

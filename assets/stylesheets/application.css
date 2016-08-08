@@ -33,8 +33,6 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 40px 2%;
-  line-height: 1.5;
   z-index: 1000; }
   .no-scroll .topbar, .topbar.collapsed {
     position: fixed;
@@ -59,6 +57,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #3483FC; }
+  .topbar .subtitle {
+    color: rgba(52, 54, 58, 0.5);
+    font-size: 16px;
+    font-weight: 200; }
 
 .safari-9:not(.ios) .topbar.collapsed {
   background-color: rgba(255, 255, 255, 0.6);
@@ -80,7 +82,7 @@
 .topbar-container {
   position: relative;
   margin: auto;
-  height: 44px;
+  height: 64px;
   text-align: center; }
   .topbar-container > * {
     display: inline-block; }
@@ -618,7 +620,7 @@ a {
 .timeline {
   overflow: scroll;
   position: absolute;
-  top: 38px;
+  top: 58px;
   right: 0;
   bottom: 0;
   left: 0; }
@@ -705,7 +707,7 @@ small {
   z-index: 10;
   cursor: move;
   position: relative;
-  top: 38px; }
+  top: 58px; }
   .vis-top .vis-time-axis .vis-text {
     color: rgba(52, 54, 58, 0.65);
     padding: 5px 0; }
