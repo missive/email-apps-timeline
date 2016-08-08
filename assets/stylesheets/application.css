@@ -663,13 +663,15 @@ a {
 small {
   display: block;
   color: rgba(52, 54, 58, 0.5);
-  font-size: 11px; }
+  font-size: 14px; }
   small a {
     color: rgba(52, 54, 58, 0.75); }
   small a:hover, small a:focus {
     color: black; }
   small + small {
     margin-top: 0.65em; }
+  small span {
+    color: #2B6FF7; }
 
 .white-box {
   background-color: #fff;

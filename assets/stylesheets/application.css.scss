@@ -73,10 +73,14 @@ a {
 small {
   display: block;
   color: rgba($textColor, .5);
-  font-size: 11px;
+  font-size: 14px;
   a { color: rgba($textColor, .75) }
   a:hover, a:focus { color: black; }
   & + small { margin-top: .65em }
+  span {
+
+    color: #2B6FF7;
+  }
 }
 
 .white-box {
