@@ -881,15 +881,20 @@
         type: "original"
         start: "2013-07-13"
   -
-    title: "persona"
+    title: "Persona"
     platforms:
+      -
+        name: mac
       -
         name: ios
     url: "http://www.personamail.com/"
     events:
       -
         type: "original"
-        start: "2014-12-09"
+        start: "2011-12-09"
+      -
+        type: "discontinued"
+        start: "2015-01-01"
   -
     title: "MailDeck"
     platforms:
