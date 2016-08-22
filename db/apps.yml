@@ -895,7 +895,7 @@
       -
         type: "discontinued"
         start: "2015-01-01"
-        end: "2015-01-02"
+        end: "2015-02-01"
   -
     title: "MailDeck"
     platforms:
