@@ -892,6 +892,7 @@
       -
         type: "original"
         start: "2011-12-09"
+        end: "2015-01-01"
       -
         type: "discontinued"
         start: "2015-01-01"
