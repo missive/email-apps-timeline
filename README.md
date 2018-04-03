@@ -15,7 +15,7 @@ We thought it might be interesting to visualize the history of all those email c
 
 <a href="http://email-apps-timeline.missiveapp.com">![Email Apps Timeline Cover](https://cldup.com/Tk_Zh99_MW-3000x3000.png)</a>
 **An interactive timeline of how major email apps have evolved through time**<br>
-[email-apps-timeline.missiveapp.com](http://email-apps-timeline.missiveapp.com)
+[missive.github.io/email-apps-timeline](https://missive.github.io/email-apps-timeline/)
 
 It seems that each time a new platform is released, there is an influx of new email apps released to conquer the new market (web, iOS, Android). Then, big players start to acquire the winners to become the instant frontrunners in those new markets.
 
