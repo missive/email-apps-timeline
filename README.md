@@ -13,7 +13,7 @@ Is this a recent trend? Were email companies bought and sold in the past too?
 
 We thought it might be interesting to visualize the history of all those email clients on a timeline: their start, acquisition, and discontinuation.
 
-<a href="http://email-apps-timeline.missiveapp.com">![Email Apps Timeline Cover](https://cldup.com/Tk_Zh99_MW-3000x3000.png)</a>
+<a href="https://missive.github.io/email-apps-timeline/">![Email Apps Timeline Cover](https://cldup.com/Tk_Zh99_MW-3000x3000.png)</a>
 **An interactive timeline of how major email apps have evolved through time**<br>
 [missive.github.io/email-apps-timeline](https://missive.github.io/email-apps-timeline/)
 
